@@ -795,7 +795,7 @@ footer {
 */
 
 // Collapse timeline
-@media only screen and (max-width: 750px) {
+@media only screen and (max-device-width: 750px) {
     #experience-timeline {
         &:before,
         &:after {
@@ -819,7 +819,7 @@ footer {
 }
 
 // Medium Devices
-@media only screen and (max-width: 992px) {
+@media only screen and (max-device-width: 992px) {
     #lead {
         height: auto;
         min-height: auto;
@@ -847,7 +847,7 @@ footer {
 }
 
 // Small Devices
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
     header {
         position: fixed;
         display: none;
@@ -910,7 +910,7 @@ footer {
 }
 
 // Extra Small Devices
-@media only screen and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
     #lead-content {
         h1 {
             font-size: 1.5em;
