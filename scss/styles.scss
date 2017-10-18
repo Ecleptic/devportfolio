@@ -451,7 +451,7 @@ footer {
 #experience-timeline {
     margin: 30px auto 0 auto;
     position: relative;
-    max-width: 1000px;
+    max-device-width: 1000px;
     &:before {
         position: absolute;
         content: '';
@@ -555,7 +555,7 @@ footer {
 }
 
 .education-block {
-    max-width: 700px;
+    max-device-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
@@ -606,7 +606,7 @@ footer {
 
 .project {
     position: relative;
-    max-width: 900px;
+    max-device-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -667,7 +667,7 @@ footer {
         display: block;
         margin: 0 auto;
         padding: 0;
-        max-width: 800px;
+        max-device-width: 800px;
     }
     li {
         display: inline-block;
@@ -700,7 +700,7 @@ footer {
 }
 
 #contact-form {
-    max-width: 500px;
+    max-device-width: 500px;
     margin: 0 auto;
     input,
     textarea {
@@ -759,7 +759,7 @@ footer {
 }
 
 .optional-section-block {
-    max-width: 700px;
+    max-device-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
     border: 1px solid $border;
