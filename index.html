@@ -83,10 +83,10 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I am currently finishing my Bachelors for Computer Science at Sam Houston State University. I am always working on some form
-                        of side project to learn something new, usually involving a full stack Javascript application. I
-                        usually spend about 10-15 hours a week working on these side projects. I absolutely love creating
-                        beautiful code that solves problems. Currently a part of the SHSU Overwatch Team.
+                        I am currently finishing my Bachleors of Computer Science at Sam Houston State University. There is always some project I
+                        am working on to better strengthen my skills, these projects usually involve a full stack JavaScript
+                        application. I usually spend about 10-15 hours a week working on these side projects. I absolutely
+                        love creating beautiful code that solves problems.
                     </p>
                 </div>
             </div>
@@ -169,13 +169,13 @@
                     <div class="project-info">
                         <h3>Code Chat</h3>
                         <p>
-                            During my Fall semester in 2017, I worked with a 9-man team to design and build any project we desired. Some of my teammates
+                            During my Fall semester in 2017, I worked with a 9-man team to design and build any project we desired. Some of my team mates
                             had been working together previously and had tried sharing code between each other, However they
                             found no optimal way.
                         </p>
                         <p>
-                            We decided to build a chatting application that could run and compile code immedately. I was the lead programmer for all
-                            javascript modules within front-end and back-end. Our whole system utilizes websockets between
+                            We decided to build a chatting application that could run and compile code immediately. I was the lead programmer for all
+                            JavaScript modules within front-end and back-end. Our whole system utilizes websockets between
                             the webapp, the chat server, and the compiling server, making it as network performant as possible.
                         </p>
 
@@ -193,12 +193,12 @@
                     <div class="project-info">
                         <h3>My Pantry</h3>
                         <p>
-                            To work on my SQL skills and to show off my javascript abilities, I decided to build the classic todo app, but of course
+                            To work on my SQL skills and to show off my JavaScript abilities, I decided to build the classic todo app, but of course
                             with a small twist.
                         </p>
                         <p>
-                            The front end of the app is in pure javascript with the exception of using axios for http requests. The back end is written
-                            in node and uses PostgreSQL for the sql database. There is a basic register/login system encrypted
+                            The front end of the app is in pure JavaScript with the exception of using axios for http requests. The back end is written
+                            in node and uses PostgreSQL for the SQL database. There is a basic register/login system encrypted
                             with
                             <a href="https://www.npmjs.com/package/crypto-js">crypto-js</a>.
                         </p>
@@ -219,7 +219,7 @@
                         <h3>Americans for Responsible Insurance</h3>
                         <p>
                             ARI was created from 0 to a solid beta in just 24 days. The app needed to be in a preview phase for investors as soon as
-                            possible. Using Ionic 2 and AngularJS, I protoyped the app, back end server including an automated
+                            possible. Using Ionic 2 and AngularJS, I prototyped the app, back end server including an automated
                             email system, and database storage within those 24 days. Unfortunately the startup fell through
                             from financial burdens.
                         </p>
@@ -335,6 +335,262 @@
         </div>
     </footer>
     <!-- End footer -->
+    <style>
+        /* customizable snowflake styling */
+
+        .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial;
+            text-shadow: 0 0 1px #000;
+        }
+
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+            100% {
+                top: 100%
+            }
+        }
+
+        @-webkit-keyframes snowflakes-shake {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+            100% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+            100% {
+                top: 100%
+            }
+        }
+
+        @keyframes snowflakes-shake {
+            0% {
+                transform: translateX(0px)
+            }
+            50% {
+                transform: translateX(80px)
+            }
+            100% {
+                transform: translateX(0px)
+            }
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10%;
+            z-index: 9999;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
+            -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+            -webkit-animation-duration: 10s, 3s;
+            -webkit-animation-timing-function: linear, ease-in-out;
+            -webkit-animation-iteration-count: infinite, infinite;
+            -webkit-animation-play-state: running, running;
+            animation-name: snowflakes-fall, snowflakes-shake;
+            animation-duration: 10s, 3s;
+            animation-timing-function: linear, ease-in-out;
+            animation-iteration-count: infinite, infinite;
+            animation-play-state: running, running
+        }
+
+        .snowflake:nth-of-type(0) {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+
+        .snowflake:nth-of-type(1) {
+            left: 10%;
+            -webkit-animation-delay: 1s, 1s;
+            animation-delay: 1s, 1s
+        }
+
+        .snowflake:nth-of-type(2) {
+            left: 20%;
+            -webkit-animation-delay: 6s, .5s;
+            animation-delay: 6s, .5s
+        }
+
+        .snowflake:nth-of-type(3) {
+            left: 30%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+
+        .snowflake:nth-of-type(4) {
+            left: 40%;
+            -webkit-animation-delay: 2s, 2s;
+            animation-delay: 2s, 2s
+        }
+
+        .snowflake:nth-of-type(5) {
+            left: 50%;
+            -webkit-animation-delay: 8s, 3s;
+            animation-delay: 8s, 3s
+        }
+
+        .snowflake:nth-of-type(6) {
+            left: 60%;
+            -webkit-animation-delay: 6s, 2s;
+            animation-delay: 6s, 2s
+        }
+
+        .snowflake:nth-of-type(7) {
+            left: 70%;
+            -webkit-animation-delay: 2.5s, 1s;
+            animation-delay: 2.5s, 1s
+        }
+
+        .snowflake:nth-of-type(8) {
+            left: 80%;
+            -webkit-animation-delay: 1s, 0s;
+            animation-delay: 1s, 0s
+        }
+
+        .snowflake:nth-of-type(9) {
+            left: 90%;
+            -webkit-animation-delay: 3s, 1.5s;
+            animation-delay: 3s, 1.5s
+        }
+        .snowflake:nth-of-type(10) {
+            left: 1%;
+            -webkit-animation-delay: 0s, 0s;
+            animation-delay: 0s, 0s
+        }
+
+        .snowflake:nth-of-type(11) {
+            left: 15%;
+            -webkit-animation-delay: 1.3s, 1.3s;
+            animation-delay: 1.3s, 1.3s
+        }
+
+        .snowflake:nth-of-type(12) {
+            left: 25%;
+            -webkit-animation-delay: 3s, .5s;
+            animation-delay: 3s, .5s
+        }
+
+        .snowflake:nth-of-type(13) {
+            left: 35%;
+            -webkit-animation-delay: 1s, 2s;
+            animation-delay: 1s, 2s
+        }
+
+        .snowflake:nth-of-type(14) {
+            left: 45%;
+            -webkit-animation-delay: 8s, 2s;
+            animation-delay: 8s, 2s
+        }
+
+        .snowflake:nth-of-type(15) {
+            left: 55%;
+            -webkit-animation-delay: 13s, 3s;
+            animation-delay: 13s, 3s
+        }
+
+        .snowflake:nth-of-type(16) {
+            left: 65%;
+            -webkit-animation-delay: 4s, 2s;
+            animation-delay: 4s, 2s
+        }
+
+        .snowflake:nth-of-type(17) {
+            left: 75%;
+            -webkit-animation-delay: 7.5s, 1s;
+            animation-delay: 7.5s, 1s
+        }
+
+        .snowflake:nth-of-type(18) {
+            left: 85%;
+            -webkit-animation-delay: 4.5s, 0s;
+            animation-delay: 4.5s, 0s
+        }
+
+        .snowflake:nth-of-type(19) {
+            left: 95%;
+            -webkit-animation-delay: 6s, 1.5s;
+            animation-delay: 6s, 1.5s
+        }
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+
+        <div class="snowflake">
+            ❄
+        </div>
+
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
