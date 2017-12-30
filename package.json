@@ -14,7 +14,7 @@
     "coding",
     "dev"
   ],
-  "author": "Ryan Fitzgerald",
+  "author": "Cameron Green",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.12.5",
