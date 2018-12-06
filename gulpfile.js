@@ -40,9 +40,13 @@ gulp.task('browser-sync', function() {
     })
 })
 
-gulp.task('watch', ['scripts', 'styles','browser-sync'], function() {
-    gulp.watch('js/*.js', ['scripts'])
-    gulp.watch('scss/*.scss', ['styles'])
-    gulp.watch("*.html").on('change', browserSync.reload)
+// gulp.task('watch', ['scripts', 'styles','browser-sync'], function() {
+//     gulp.watch('js/*.js', ['scripts'])
+//     gulp.watch('scss/*.scss', ['styles'])
+//     gulp.watch("*.html").on('change', browserSync.reload)
 
-})
+// })
+gulp.task('watch', function() { //TODO: Check this from parent
+    gulp.watch('js/scripts.js', gulp.series('scripts'));
+    gulp.watch('scss/styles.scss', gulp.series('styles'));
+});
