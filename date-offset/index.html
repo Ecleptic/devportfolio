@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DateTime Offset</title>
+</head>
+
+<body>
+    <h1>Your offset is <span id="offset"></span></h1>
+</body>
+<script>
+    document.onload = getOffset();
+
+    function getOffset() {
+        var d = new Date();
+        var n = d.getTimezoneOffset();
+        document.getElementById("offset").innerHTML = n;
+    }
+</script>
+
+</html>
