@@ -1,0 +1,49 @@
+name: Generate Resume PDF
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'resume.json'
+      - 'pdf/**'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd pdf
+          npm install
+      
+      - name: Generate PDF
+        run: |
+          cd pdf
+          node generate-resume.js
+      
+      - name: Check if PDF changed
+        id: check_changes
+        run: |
+          git diff --quiet html/assets/Resume.pdf || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push PDF
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add html/assets/Resume.pdf
+          git commit -m "🤖 Auto-generate Resume PDF [skip ci]"
+          git push

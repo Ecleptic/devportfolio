@@ -28,7 +28,13 @@
         "startDate": "2021-08",
         "endDate": "Present",
         "summary": "Leading front-end development initiatives for wm.com, creating modern, scalable web applications.",
-        "highlights": []
+        "highlights": [
+          "**PLACEHOLDER** Architected and implemented responsive React components for wm.com, improving user experience across desktop and mobile platforms",
+          "**PLACEHOLDER** Optimized site performance through code splitting, lazy loading, and modern bundling techniques, enhancing page load times",
+          "**PLACEHOLDER** Collaborated with cross-functional teams including UX designers, backend engineers, and product managers to deliver customer-facing features",
+          "**PLACEHOLDER** Established front-end best practices and coding standards, conducting code reviews to maintain high code quality",
+          "**PLACEHOLDER** Technologies: React, JavaScript/TypeScript, HTML5, CSS3, modern build tools and frameworks"
+        ]
       },
       {
         "company": "JPMorgan Chase",
@@ -279,7 +285,8 @@
         "url": "https://github.com/Ecleptic/NightmareInstagramScraper",
         "links": {
           "github": "https://github.com/Ecleptic/NightmareInstagramScraper"
-        }
+        },
+        "hidden": "all"
       }
     ]
   }
