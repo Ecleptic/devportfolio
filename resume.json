@@ -4,7 +4,7 @@
     "label": "Software Engineer",
     "email": "cameron@camerongreens.com",
     "website": "https://camerongreens.com",
-    "summary": "Full Stack Web Developer able to build a sophisticated website with full database backend all the way from mockup to rollout. Adept at working with diverse teams to implement projects. Flexible developer with strong communication skills and experience in diverse environments.",
+    "summary": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with a proven track record of transforming complex business requirements into intuitive user experiences. Successfully delivered solutions serving 30,000+ internal users at JPMorgan Chase and currently leading front-end initiatives at Waste Management. Passionate about creating elegant, performant applications and mentoring development teams. Known for rapid technical growth, strong communication skills, and ability to collaborate effectively with cross-functional teams to deliver high-impact solutions.",
     "profiles": [
       {
         "network": "GitHub",
@@ -28,13 +28,7 @@
         "startDate": "2021-08",
         "endDate": "Present",
         "summary": "Leading front-end development initiatives for wm.com, creating modern, scalable web applications.",
-        "highlights": [
-          "**PLACEHOLDER** Architected and implemented responsive React components for wm.com, improving user experience across desktop and mobile platforms",
-          "**PLACEHOLDER** Optimized site performance through code splitting, lazy loading, and modern bundling techniques, enhancing page load times",
-          "**PLACEHOLDER** Collaborated with cross-functional teams including UX designers, backend engineers, and product managers to deliver customer-facing features",
-          "**PLACEHOLDER** Established front-end best practices and coding standards, conducting code reviews to maintain high code quality",
-          "**PLACEHOLDER** Technologies: React, JavaScript/TypeScript, HTML5, CSS3, modern build tools and frameworks"
-        ]
+        "highlights": []
       },
       {
         "company": "JPMorgan Chase",
