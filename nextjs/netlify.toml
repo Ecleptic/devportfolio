@@ -2,6 +2,8 @@
   # Build command
   command = "npm run build"
   
+  base = "nextjs"
+
   # Directory to publish (relative to base directory)
   publish = "nextjs/out"
 
