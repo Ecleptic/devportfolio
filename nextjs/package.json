@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "generate-pdf": "cd ../pdf && node generate-resume.js && cp output/Cameron_Green_Resume.pdf ../nextjs/public/Resume.pdf",
+    "generate-pdf": "node ../pdf/generate-resume.js --output public/Resume.pdf",
     "predev": "npm run generate-pdf",
     "dev": "next dev --turbopack",
     "prebuild": "npm run generate-pdf",

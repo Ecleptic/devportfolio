@@ -9,16 +9,28 @@ const PDFDocument = require('pdfkit');
 const fs = require('fs');
 const path = require('path');
 
-// Load resume data from parent directory
-const resumeData = require('../resume.json');
+// Parse command line arguments
+const args = process.argv.slice(2);
+const outputArgIndex = args.indexOf('--output');
+const customOutputPath = outputArgIndex !== -1 ? args[outputArgIndex + 1] : null;
 
-// Output paths
-const OUTPUT_DIR = path.join(__dirname, 'output');
-const OUTPUT_FILE = path.join(OUTPUT_DIR, 'Cameron_Green_Resume.pdf');
+// Load resume data from parent directory (relative to this script)
+const resumeData = require(path.join(__dirname, '../resume.json'));
+
+// Determine output path
+let OUTPUT_FILE;
+if (customOutputPath) {
+  // If custom output path is provided, resolve it relative to the CWD
+  OUTPUT_FILE = path.resolve(process.cwd(), customOutputPath);
+} else {
+  // Default: output to pdf/output directory
+  OUTPUT_FILE = path.join(__dirname, 'output', 'Cameron_Green_Resume.pdf');
+}
 
 // Ensure output directory exists
+const OUTPUT_DIR = path.dirname(OUTPUT_FILE);
 if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR);
+  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
 // Color scheme
