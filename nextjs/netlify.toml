@@ -1,15 +1,14 @@
 [build]
   command = "cd ../pdf && npm install && node generate-resume.js && cd ../nextjs && npm run build"
-  publish = "out"
 
 [context.production]
-  command = "npm run build"
+  command = "cd ../pdf && npm install && node generate-resume.js && cd ../nextjs && npm run build"
 
 [context.deploy-preview]
-  command = "npm run build"
+  command = "cd ../pdf && npm install && node generate-resume.js && cd ../nextjs && npm run build"
 
 [context.branch-deploy]
-  command = "npm run build"
+  command = "cd ../pdf && npm install && node generate-resume.js && cd ../nextjs && npm run build"
 
 [[redirects]]
   from = "/*"
