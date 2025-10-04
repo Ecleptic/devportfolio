@@ -28,7 +28,9 @@
         "startDate": "2021-08",
         "endDate": "Present",
         "summary": "Leading front-end development initiatives for wm.com, creating modern, scalable web applications.",
-        "highlights": []
+        "highlights": [
+          "Technologies: React, Next JS, AEM, Sanity, Data Dog"
+        ]
       },
       {
         "company": "JPMorgan Chase",
