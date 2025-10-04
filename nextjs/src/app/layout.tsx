@@ -4,6 +4,9 @@ import "../styles/globals.scss";
 export const metadata: Metadata = {
   title: "Cameron Green's Portfolio",
   description: "Full Stack Web Developer - Software Engineer Portfolio",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
