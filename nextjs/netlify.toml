@@ -1,9 +1,6 @@
 [build]
   # Build command
   command = "npm run build"
-  
-  # Directory to publish (relative to base directory)
-  publish = "out"
 
 # Production context: all deploys from the main branch
 [context.production]
