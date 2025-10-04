@@ -1,34 +1,28 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleOpenMenu = useCallback(() => {
+    setMobileMenuOpen(true);
+  }, []);
+
+  const handleCloseMenu = useCallback(() => {
+    setMobileMenuOpen(false);
+  }, []);
+
   useEffect(() => {
-    console.log('[Header] Component mounted, mobileMenuOpen:', mobileMenuOpen);
-    
-    // Check the computed style on mount
-    const header = document.querySelector('header');
-    if (header) {
-      const computedStyle = window.getComputedStyle(header);
-      console.log('[Header] Header computed display:', computedStyle.display);
-      console.log('[Header] Header has active class:', header.classList.contains('active'));
-    }
-    
     // Toggle body active class for mobile menu
     if (mobileMenuOpen) {
       document.body.classList.add('active');
-      console.log('[Header] Opening menu - added active class to body and header');
     } else {
       document.body.classList.remove('active');
-      console.log('[Header] Closing menu - removed active class from body and header');
     }
   }, [mobileMenuOpen]);
 
   useEffect(() => {
-    console.log('[Header] Setting up click handlers');
-    
     // Smooth scrolling for anchor links
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -52,7 +46,7 @@ export default function Header() {
       <button
         id="mobile-menu-open"
         className="shadow-large"
-        onClick={() => setMobileMenuOpen(true)}
+        onClick={handleOpenMenu}
         type="button"
         aria-label="Open menu"
       >
@@ -62,7 +56,7 @@ export default function Header() {
       <header className={mobileMenuOpen ? 'active' : ''}>
         <button 
           id="mobile-menu-close" 
-          onClick={() => setMobileMenuOpen(false)}
+          onClick={handleCloseMenu}
           type="button"
           aria-label="Close menu"
         >

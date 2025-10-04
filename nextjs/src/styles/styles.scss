@@ -885,14 +885,15 @@ footer {
 @media only screen and (max-width: 768px) {
     header {
         position: fixed;
-        display: none !important;
+        display: none;
         z-index: 999;
         animation: none;
         bottom: 0;
         height: 100%;
+        transition: none;  // Remove any transitions for instant show/hide
         
         &.active {
-            display: block !important;
+            display: block;
         }
     }
     #mobile-menu-open,
