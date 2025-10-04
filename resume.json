@@ -4,7 +4,7 @@
     "label": "Software Engineer",
     "email": "cameron@camerongreens.com",
     "website": "https://camerongreens.com",
-    "summary": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with a proven track record of transforming complex business requirements into intuitive user experiences. Successfully delivered solutions serving 30,000+ internal users at JPMorgan Chase and currently leading front-end initiatives at Waste Management. Passionate about creating elegant, performant applications and mentoring development teams. Known for rapid technical growth, strong communication skills, and ability to collaborate effectively with cross-functional teams to deliver high-impact solutions.",
+    "summary": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with a proven track record of transforming complex business requirements into intuitive user experiences. Successfully delivered solutions serving 30,000+ internal users at JPMorgan Chase and currently leading front-end initiatives at Waste Management. Passionate about creating elegant, performant applications and mentoring development teams. Maintains a personal homelab for 5+ years to experiment with new technologies, containerization, and infrastructure automation. Known for rapid technical growth, strong communication skills, and ability to collaborate effectively with cross-functional teams to deliver high-impact solutions.",
     "profiles": [
       {
         "network": "GitHub",
@@ -169,6 +169,21 @@
     "hidden": "resume",
 
     "projects": [
+      {
+        "name": "Personal Homelab Infrastructure",
+        "description": "Designed and maintained a distributed homelab environment for 5+ years, running containerized services across multiple devices. Self-host productivity tools, automation systems, and media services with focus on privacy, performance, and reliability. Continuously experiment with new technologies and infrastructure patterns.",
+        "highlights": [
+          "Multi-device Docker deployment (Raspberry Pi, Unraid, macOS)",
+          "Home automation with Home Assistant and Homebridge",
+          "Network-wide ad blocking and DNS with Pi-hole",
+          "Private cloud storage and collaboration with Nextcloud",
+          "Zero-trust networking with Tailscale VPN mesh",
+          "Self-hosted photo management with Immich",
+          "Digital library management with Calibre and Storyteller (EPUB3)",
+          "Container orchestration and monitoring with Portainer"
+        ],
+        "hidden": "resume"
+      },
       {
         "name": "Interval Timer",
         "description": "For fun, and to practice my design chops, I created this interval timer and published it cross platform.",
