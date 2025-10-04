@@ -206,6 +206,18 @@ header {
     padding: 0 7px;
     border-radius: 4px;
     background: $background;
+    border: none;
+    outline: none;
+    
+    &:hover {
+        color: $base-color-hover;
+        background: #f0f0f0;
+    }
+    
+    &:focus {
+        outline: 2px solid $base-color;
+        outline-offset: 2px;
+    }
 }
 
 #mobile-menu-close {
@@ -218,6 +230,18 @@ header {
     padding-top: 10px;
     cursor: pointer;
     color: $base-color;
+    border: none;
+    outline: none;
+    
+    &:hover {
+        color: $base-color-hover;
+    }
+    
+    &:focus {
+        outline: 2px solid $base-color;
+        outline-offset: 2px;
+    }
+    
     span {
         font-size: 0.5em;
         text-transform: uppercase;
@@ -861,11 +885,15 @@ footer {
 @media only screen and (max-width: 768px) {
     header {
         position: fixed;
-        display: none;
+        display: none !important;
         z-index: 999;
         animation: none;
         bottom: 0;
         height: 100%;
+        
+        &.active {
+            display: block !important;
+        }
     }
     #mobile-menu-open,
     #mobile-menu-close {
