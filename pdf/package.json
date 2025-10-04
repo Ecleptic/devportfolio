@@ -1,0 +1,21 @@
+{
+  "name": "resume-generator",
+  "version": "1.0.0",
+  "description": "Generate PDF resume from JSON data using PDFKit",
+  "main": "generate-resume.js",
+  "scripts": {
+    "generate": "node generate-resume.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "resume",
+    "pdf",
+    "pdfkit",
+    "cv"
+  ],
+  "author": "Cameron Green",
+  "license": "MIT",
+  "dependencies": {
+    "pdfkit": "^0.15.0"
+  }
+}
