@@ -884,16 +884,16 @@ footer {
 // Small Devices
 @media only screen and (max-width: 768px) {
     header {
-        position: fixed;
-        display: none;
+        position: fixed !important;
+        display: none !important;
         z-index: 999;
-        animation: none;
+        animation: none !important;
         bottom: 0;
         height: 100%;
-        transition: none;  // Remove any transitions for instant show/hide
+        transition: none !important;
         
         &.active {
-            display: block;
+            display: block !important;
         }
     }
     #mobile-menu-open,
