@@ -1,12 +1,9 @@
 [build]
-  # Directory with the serverless functions
-  functions = "netlify/functions"
-  
-  # Directory to publish (static files)
-  publish = "out"
-  
   # Build command
   command = "npm run build"
+  
+  # Directory to publish (relative to base directory)
+  publish = "out"
 
 # Production context: all deploys from the main branch
 [context.production]
