@@ -24,7 +24,7 @@
     "label": "Software Engineer",
     "email": "cameron@camerongreens.com",
     "website": "https://camerongreens.com",
-    "summary": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with a proven track record of transforming complex business requirements into intuitive user experiences. Successfully delivered solutions serving 30,000+ internal users at JPMorgan Chase and currently leading front-end initiatives at Waste Management. Passionate about creating elegant, performant applications and mentoring development teams. Maintains a personal homelab for 5+ years to experiment with new technologies, containerization, and infrastructure automation. Known for rapid technical growth, strong communication skills, and ability to collaborate effectively with cross-functional teams to deliver high-impact solutions.",
+    "summary": "Senior Front-End Software Engineer with over 10 years of experience architecting and delivering enterprise-scale web applications for Fortune 500 companies including JPMorgan Chase and Waste Management. Specialized in modern React ecosystems with deep expertise in Next.js, TypeScript, and performance optimization. Proven track record of transforming complex business requirements into intuitive, scalable user experiences that serve tens of thousands of users. Successfully led the development of mission-critical productivity tools, including Microsoft Office integrations and content management systems that streamlined workflows for 30,000+ internal banking professionals. Currently driving front-end innovation at Waste Management, leveraging cutting-edge technologies including Adobe Experience Manager, headless CMS architectures, and advanced monitoring solutions. Distinguished by rapid technical adaptation, from .NET enterprise development to modern JavaScript frameworks, consistently delivering high-impact solutions under aggressive timelines. Passionate about mentoring development teams, implementing best practices, and fostering collaborative engineering cultures. Maintains an extensive personal homelab infrastructure for 5+ years, continuously experimenting with containerization, automation, and emerging technologies to stay at the forefront of software engineering innovation. Experienced in self-hosting and optimizing Large Language Models for development workflows, leveraging AI-assisted coding tools as productivity multipliers while maintaining code quality and architectural integrity. Actively integrates modern AI development practices including prompt engineering, code generation assistance, and automated documentation to enhance team efficiency and accelerate delivery cycles.",
     "profiles": [
       {
         "network": "GitHub",
@@ -47,9 +47,9 @@
         "website": "https://wm.com",
         "startDate": "2021-08",
         "endDate": "Present",
-        "summary": "Leading front-end development initiatives for wm.com, creating modern, scalable web applications.",
+        "summary": "Spearhead front-end development initiatives for enterprise-scale web applications at wm.com, architecting modern, scalable solutions that enhance user experience and drive business objectives.",
         "highlights": [
-          "Technologies: React, Next JS, AEM, Sanity, Data Dog"
+          "Technology Stack: React, Next.js, Adobe Experience Manager (AEM), Sanity CMS, DataDog monitoring and analytics"
         ]
       },
       {
@@ -84,7 +84,7 @@
         "position": "Technical Director, Chief Developer",
         "startDate": "2017-05",
         "endDate": "2017-07",
-        "summary": "In two months built a full stack application using Ionic 2. This app was used to gather information for ARI. When users were back at the base, they would connect their tablets and upload the data to a server which stored all the data. The server ran a script which would go through and parse the data for different uses around the company.",
+        "summary": "Rapidly developed and delivered a comprehensive full-stack data collection application within a two-month timeline to meet critical investor presentation requirements. Architected the complete technology stack including mobile application, backend server infrastructure, automated email systems, and data processing workflows for enterprise information management.",
         "highlights": [
           "Built full-stack application in 2 months using Ionic 2",
           "Developed data collection and synchronization system",
@@ -208,7 +208,7 @@
       },
       {
         "name": "Interval Timer",
-        "description": "For fun, and to practice my design chops, I created this interval timer and published it cross platform.",
+        "description": "Designed and developed a cross-platform interval timer application to enhance workout productivity and time management. Successfully published across web, Android, and iOS platforms, demonstrating proficiency in multi-platform development and user experience design.",
         "image": "IntervalTimer.png",
         "highlights": [
           "Cross-platform timer application",
@@ -226,7 +226,7 @@
       },
       {
         "name": "Vertical Solitaire",
-        "description": "I had been playing with JS Canvas and wanted to practice more. I didn't like my current solitaire app, So I decided to make one.",
+        "description": "Developed a custom solitaire game application using JavaScript Canvas API to explore advanced graphics programming techniques and deliver an enhanced gaming experience. Successfully launched on both Android and iOS app stores.",
         "image": "VerticalSolitaire.png",
         "highlights": [
           "Built with JavaScript Canvas",
@@ -239,7 +239,7 @@
       },
       {
         "name": "Overwatch GraphQL API",
-        "description": "Built a graphql api to list the overwatch heroes and maps that are currently released in the game",
+        "description": "Architected and implemented a GraphQL API service providing comprehensive data access for Overwatch game content, including heroes, maps, and game assets. Demonstrates expertise in API design, GraphQL schema development, and game data management.",
         "url": "https://overwatchgraphqlapi.ecleptic.now.sh",
         "links": {
           "website": "https://overwatchgraphqlapi.ecleptic.now.sh",
@@ -248,19 +248,19 @@
       },
       {
         "name": "Americans for Responsible Insurance",
-        "description": "ARI was created from 0 to a solid beta in just 24 days. The app needed to be in a preview phase for investors as soon as possible. Using Ionic 2 and AngularJS, I prototyped the app, back end server including an automated email system, and database storage within those 24 days. Unfortunately the startup fell through from financial burdens.",
+        "description": "Rapidly prototyped and delivered a comprehensive full-stack application from concept to beta in 24 days to meet critical investor presentation deadlines. Developed complete technology stack including mobile application, backend server infrastructure, automated email systems, and database storage using Ionic 2 and AngularJS.",
         "image": "ARI.png",
         "highlights": [
           "Full-stack app built in 24 days",
           "Ionic 2 and AngularJS",
           "Backend server with automated email system",
           "Database storage system",
-          "I have IP rights to all the code in ARI, if requested I can share it"
+          "Complete intellectual property ownership retained"
         ]
       },
       {
         "name": "Code Chat",
-        "description": "During my Fall semester in 2017, I worked with a 9-man team to design and build any project we desired. We decided to build a chatting application that could run and compile code immediately. I was the lead programmer for all JavaScript modules within front-end and back-end. Our whole system utilizes websockets between the webapp, the chat server, and the compiling server, making it as network performant as possible.",
+        "description": "Led JavaScript development for a collaborative real-time code execution platform as part of a 9-person academic team project. Architected WebSocket-based communication system connecting web application, chat server, and code compilation server to deliver optimal network performance and seamless user experience.",
         "image": "CodeChat.png",
         "highlights": [
           "9-person team project",
@@ -275,7 +275,7 @@
       },
       {
         "name": "My Pantry",
-        "description": "To work on my SQL skills and to show off my JavaScript abilities, I decided to build the classic todo app, but of course with a small twist. The front end of the app is in pure JavaScript with the exception of using axios for http requests. The back end is written in node and uses PostgreSQL for the SQL database. There is a basic register/login system encrypted with crypto-js.",
+        "description": "Developed a full-stack pantry management application to advance SQL database skills and demonstrate JavaScript proficiency. Built with vanilla JavaScript frontend, Node.js backend, PostgreSQL database, and secure authentication system using crypto-js encryption.",
         "image": "MyPantry.png",
         "highlights": [
           "Pure JavaScript frontend (with axios)",
@@ -292,7 +292,7 @@
       },
       {
         "name": "Overwatch Wallpapers",
-        "description": "In 2016 to cement my knowledge of Angular, and fuel my excitement for the coming release of Overwatch, I decided to build the Overwatch Wallpapers website over a weekend. The website allows you to search by heroes, maps, and artists and also hit one button to download a zip of all images on the site. You could also click the image of a hero and it would show all saved wallpaper images of that hero.",
+        "description": "Developed a comprehensive Angular-based wallpaper gallery application over a weekend to strengthen framework expertise. Features advanced search functionality by heroes, maps, and artists, plus bulk download capabilities for enhanced user experience.",
         "highlights": [
           "Built in one weekend",
           "Angular-based application",
@@ -307,7 +307,7 @@
       },
       {
         "name": "Instagram Scraper",
-        "description": "A professor asked me to get him a picture of every image in a school's Instagram page for his research. Using NightmareJS I was able to easily screenshot each image from a config file and then place each image into a folder from each page.",
+        "description": "Developed an automated web scraping solution for academic research purposes, enabling systematic collection and organization of Instagram content. Implemented configurable batch processing using NightmareJS to capture and categorize images efficiently.",
         "highlights": [
           "NightmareJS web scraping",
           "Automated screenshot capture",
