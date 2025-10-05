@@ -21,15 +21,23 @@ npm run dev                    # http://localhost:3333
 ```
 
 ### Edit Your Resume
-**Option 1: Mobile/Web CMS**
+**Option 1: Mobile/Web CMS + GitHub Action (Automated)**
 1. Visit: https://camkgreen.sanity.studio/
 2. Log in with GitHub/Google
-3. Edit your content
-4. Click "Publish"
-5. Sync changes: `cd scripts && npm run sync-from-sanity`
+3. Edit your content and click "Publish"
+4. Go to [GitHub Actions](https://github.com/Ecleptic/devportfolio/actions/workflows/sync-from-sanity.yml)
+5. Click "Run workflow" → "Run workflow"
+6. GitHub Action syncs and commits automatically!
 
-**Option 2: Direct JSON Editing**
-1. Edit `resume.json`
+**Option 2: Mobile/Web CMS + Manual Sync**
+1. Visit: https://camkgreen.sanity.studio/
+2. Log in with GitHub/Google
+3. Edit your content and click "Publish"
+4. On your computer: `cd scripts && npm run sync-from-sanity`
+5. Commit: `git add resume.json && git commit -m "Update resume" && git push`
+
+**Option 3: Direct JSON Editing**
+1. Edit `resume.json` directly
 2. Optionally sync to Sanity: `cd scripts && npm run sync-to-sanity`
 
 ## 📂 Project Structure
@@ -77,7 +85,13 @@ devportfolio/
 
 ## 🔄 Workflows
 
-### Update Resume (via CMS)
+### Update Resume (via CMS + GitHub Action)
+1. Edit in Sanity Studio: https://camkgreen.sanity.studio/
+2. Trigger GitHub Action: https://github.com/Ecleptic/devportfolio/actions
+3. Action syncs and commits automatically
+4. Netlify deploys automatically
+
+### Update Resume (via CMS + Manual Sync)
 1. Edit in Sanity Studio
 2. `cd scripts && npm run sync-from-sanity`
 3. `git add resume.json && git commit -m "Update resume"`
