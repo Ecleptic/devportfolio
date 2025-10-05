@@ -4,13 +4,13 @@ on:
   # Manual trigger from GitHub Actions tab
   workflow_dispatch:
   
+  # Automatic trigger from Sanity webhook when you click "Publish"
+  repository_dispatch:
+    types: [sanity-update]
+  
   # Optional: Run automatically every day at 9 AM UTC
   # schedule:
   #   - cron: '0 9 * * *'
-  
-  # Optional: Trigger via webhook from Sanity
-  repository_dispatch:
-    types: [sanity-update]
 
 jobs:
   sync:
