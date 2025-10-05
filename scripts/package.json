@@ -1,0 +1,14 @@
+{
+  "name": "resume-sync-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bidirectional sync scripts for resume.json and Sanity CMS",
+  "scripts": {
+    "sync-to-sanity": "node sync-json-to-sanity.js",
+    "sync-from-sanity": "node sync-sanity-to-json.js"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.24.4",
+    "dotenv": "^16.4.7"
+  }
+}
