@@ -1,6 +1,6 @@
 import type { ResumeData } from '../types/resume';
 import { shouldShowItem } from '../types/resume';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { IoLocationOutline } from 'react-icons/io5';
 
 interface ExperienceProps {
   work: ResumeData['work'];
@@ -36,7 +36,7 @@ export default function Experience({ work }: ExperienceProps) {
         {visibleJobs.map((job, index) => (
           <div key={index} className="vtimeline-point">
             <div className="vtimeline-icon">
-              <HiOutlineLocationMarker aria-hidden="true" />
+              <IoLocationOutline aria-hidden="true" />
             </div>
             <div className="vtimeline-date">
               {formatDate(job.startDate)} - {formatDate(job.endDate)}
