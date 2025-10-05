@@ -16,6 +16,6 @@
   "author": "Cameron Green",
   "license": "MIT",
   "dependencies": {
-    "pdfkit": "^0.15.0"
+    "pdfkit": "^0.17.2"
   }
 }
