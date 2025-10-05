@@ -1,0 +1,28 @@
+{
+  "name": "resume-cms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanity Studio for Resume Portfolio Management",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "manage": "sanity manage"
+  },
+  "dependencies": {
+    "@sanity/icons": "^3.5.0",
+    "@sanity/vision": "^4.10.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^3.69.4",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^4.0.0",
+    "@types/react": "^18.3.0",
+    "eslint": "^8.6.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.7.0"
+  }
+}
