@@ -1,4 +1,24 @@
 {
+  "metadata": {
+    "title": "Cameron Green's Portfolio",
+    "description": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with proven track record at JPMorgan Chase and Waste Management.",
+    "keywords": [
+      "Cameron Green",
+      "Software Engineer",
+      "Front End Developer",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Web Developer",
+      "Portfolio",
+      "JPMorgan Chase",
+      "Waste Management"
+    ],
+    "siteUrl": "https://camerongreens.com",
+    "siteName": "Cameron Green's Portfolio",
+    "locale": "en_US"
+  },
   "basics": {
     "name": "Cameron Green",
     "label": "Software Engineer",

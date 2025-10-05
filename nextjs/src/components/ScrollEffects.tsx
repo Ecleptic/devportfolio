@@ -40,7 +40,7 @@ export default function ScrollEffects() {
       });
     };
 
-    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', checkScroll, { passive: true });
     checkScroll(); // Check on initial load
 
     return () => {

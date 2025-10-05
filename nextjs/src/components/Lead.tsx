@@ -1,4 +1,5 @@
 import type { ResumeData } from '../types/resume';
+import { FaChevronDown } from 'react-icons/fa';
 
 interface LeadProps {
   basics: ResumeData['basics'];
@@ -19,7 +20,7 @@ export default function Lead({ basics }: LeadProps) {
 
       <div id="lead-down">
         <span>
-          <i className="fa fa-chevron-down" aria-hidden="true"></i>
+          <FaChevronDown aria-hidden="true" />
         </span>
       </div>
     </div>

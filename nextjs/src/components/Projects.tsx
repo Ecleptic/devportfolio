@@ -17,10 +17,12 @@ export default function Projects({ projects }: ProjectsProps) {
       <h2 className="heading">Projects</h2>
       <div className="container">
         <div className="row">
-          {visibleProjects.map((project, index) => {
+          {visibleProjects.map((project) => {
             const hasImage = !!project.image;
+            // Use project name as key (more stable than index)
+            const projectKey = project.name.toLowerCase().replace(/\s+/g, '-');
             return (
-              <div key={index} className={`project shadow-large ${!hasImage ? 'no-image' : ''}`}>
+              <div key={projectKey} className={`project shadow-large ${!hasImage ? 'no-image' : ''}`}>
                 <div className="project-image">
                   {hasImage && <img src={`/images/${project.image}`} alt={project.name} />}
                 </div>

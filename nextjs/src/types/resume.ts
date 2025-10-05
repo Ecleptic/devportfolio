@@ -1,4 +1,12 @@
 export interface ResumeData {
+  metadata?: {
+    title: string;
+    description: string;
+    keywords: string[];
+    siteUrl: string;
+    siteName: string;
+    locale: string;
+  };
   basics: {
     name: string;
     label: string;

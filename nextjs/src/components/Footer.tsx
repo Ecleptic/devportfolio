@@ -1,4 +1,5 @@
 import type { ResumeData } from '../types/resume';
+import { FaChevronUp, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 interface FooterProps {
   basics: ResumeData['basics'];
@@ -18,7 +19,7 @@ export default function Footer({ basics }: FooterProps) {
           </div>
           <div className="col-sm-2 top">
             <span id="to-top">
-              <i className="fa fa-chevron-up" aria-hidden="true"></i>
+              <FaChevronUp aria-hidden="true" />
             </span>
           </div>
           <div className="col-sm-5 social">
@@ -26,14 +27,14 @@ export default function Footer({ basics }: FooterProps) {
               {github && (
                 <li>
                   <a href={github.url} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-github" aria-hidden="true"></i>
+                    <FaGithub aria-hidden="true" />
                   </a>
                 </li>
               )}
               {linkedin && (
                 <li>
                   <a href={linkedin.url} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
+                    <FaLinkedin aria-hidden="true" />
                   </a>
                 </li>
               )}

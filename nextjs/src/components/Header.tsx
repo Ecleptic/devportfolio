@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function Header() {
         type="button"
         aria-label="Open menu"
       >
-        <i className="fa fa-bars" aria-hidden="true"></i>
+        <FaBars aria-hidden="true" />
       </button>
 
       <header className={mobileMenuOpen ? 'active' : ''}>
@@ -61,7 +62,7 @@ export default function Header() {
           aria-label="Close menu"
         >
           <span>Close</span>
-          <i className="fa fa-times" aria-hidden="true"></i>
+          <FaTimes aria-hidden="true" />
         </button>
         <ul id="menu" className="shadow">
           <li>
