@@ -27,24 +27,42 @@ async function syncSanityToJson() {
 
     console.log('✓ Data fetched from Sanity\n');
 
-    // Remove Sanity metadata fields
-    const { _id, _type, _rev, _createdAt, _updatedAt, ...resumeData } = sanityDoc;
+    // Remove ALL Sanity metadata fields (including nested _system, _meta, etc.)
+    const cleanData = (obj) => {
+      if (Array.isArray(obj)) {
+        return obj.map(cleanData);
+      }
+      if (obj && typeof obj === 'object') {
+        const cleaned = {};
+        for (const [key, value] of Object.entries(obj)) {
+          // Skip any field starting with underscore (Sanity internal fields)
+          if (!key.startsWith('_')) {
+            cleaned[key] = cleanData(value);
+          }
+        }
+        return cleaned;
+      }
+      return obj;
+    };
+
+    const { _id, _type, _rev, _createdAt, _updatedAt, _system, ...resumeData } = sanityDoc;
+    const cleanedData = cleanData(resumeData);
 
     // Write to resume.json with pretty formatting
     console.log('📝 Writing to resume.json...');
     writeFileSync(
       RESUME_JSON_PATH,
-      JSON.stringify(resumeData, null, 2) + '\n',
+      JSON.stringify(cleanedData, null, 2) + '\n',
       'utf-8'
     );
     console.log('✓ resume.json updated successfully\n');
 
     console.log('✅ Sync complete! Your resume.json has been updated with Sanity data.');
     console.log('📊 Summary:');
-    console.log(`   - Jobs: ${resumeData.work?.jobs?.length || 0}`);
-    console.log(`   - Projects: ${resumeData.projects?.projects?.length || 0}`);
-    console.log(`   - Skills: ${resumeData.skills?.skills?.length || 0}`);
-    console.log(`   - Education: ${resumeData.education?.schools?.length || 0}\n`);
+    console.log(`   - Jobs: ${cleanedData.work?.jobs?.length || 0}`);
+    console.log(`   - Projects: ${cleanedData.projects?.projects?.length || 0}`);
+    console.log(`   - Skills: ${cleanedData.skills?.skills?.length || 0}`);
+    console.log(`   - Education: ${cleanedData.education?.schools?.length || 0}\n`);
 
     console.log('⚠️  Next steps:');
     console.log('   1. Review the changes in resume.json');

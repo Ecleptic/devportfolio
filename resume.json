@@ -1,6 +1,46 @@
 {
+  "basics": {
+    "email": "cameron@camerongreens.com",
+    "label": "Software Engineer",
+    "name": "Cameron Green",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/Ecleptic",
+        "username": "Ecleptic"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/cameron-k-green/",
+        "username": "cameron-k-green"
+      }
+    ],
+    "summary": "Senior Front-End Software Engineer with over 10 years of experience architecting and delivering enterprise-scale web applications for Fortune 500 companies including JPMorgan Chase and Waste Management. Specialized in modern React ecosystems with deep expertise in Next.js, TypeScript, and performance optimization. Proven track record of transforming complex business requirements into intuitive, scalable user experiences that serve tens of thousands of users. Successfully led the development of mission-critical productivity tools, including Microsoft Office integrations and content management systems that streamlined workflows for 30,000+ internal banking professionals. Currently driving front-end innovation at Waste Management, leveraging cutting-edge technologies including Adobe Experience Manager, headless CMS architectures, and advanced monitoring solutions. \nDistinguished by rapid technical adaptation, from .NET enterprise development to modern JavaScript frameworks, consistently delivering high-impact solutions under aggressive timelines. Passionate about mentoring development teams, implementing best practices, and fostering collaborative engineering cultures. \n\nMaintains an extensive personal home lab infrastructure for 5+ years, continuously experimenting with containerization, automation, and emerging technologies to stay at the forefront of software engineering innovation. Experienced in self-hosting and optimizing Large Language Models for development workflows, leveraging AI-assisted coding tools as productivity multipliers while maintaining code quality and architectural integrity. Actively integrates modern AI development practices including prompt engineering, code generation assistance, and automated documentation to enhance team efficiency and accelerate delivery cycles.",
+    "website": "https://camerongreens.com"
+  },
+  "education": {
+    "hidden": "resume",
+    "schools": [
+      {
+        "area": "Computer Science",
+        "description": "Acquired skills for teamwork and created small projects for classes.",
+        "endDate": "2018-08",
+        "hidden": "resume",
+        "institution": "Sam Houston State University",
+        "startDate": "2016-08",
+        "studyType": "Bachelor of Science"
+      },
+      {
+        "area": "Computer Science",
+        "description": "Developed my passion for Computer Science, I learned the basics of programming and algorithm usage.",
+        "endDate": "2015",
+        "hidden": "resume",
+        "institution": "Blinn College",
+        "studyType": "Associate of Applied Science"
+      }
+    ]
+  },
   "metadata": {
-    "title": "Cameron Green's Portfolio",
     "description": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with proven track record at JPMorgan Chase and Waste Management.",
     "keywords": [
       "Cameron Green",
@@ -15,185 +55,17 @@
       "JPMorgan Chase",
       "Waste Management"
     ],
-    "siteUrl": "https://camerongreens.com",
+    "locale": "en_US",
     "siteName": "Cameron Green's Portfolio",
-    "locale": "en_US"
-  },
-  "basics": {
-    "name": "Cameron Green",
-    "label": "Software Engineer",
-    "email": "cameron@camerongreens.com",
-    "website": "https://camerongreens.com",
-    "summary": "Senior Front-End Software Engineer with over 10 years of experience architecting and delivering enterprise-scale web applications for Fortune 500 companies including JPMorgan Chase and Waste Management. Specialized in modern React ecosystems with deep expertise in Next.js, TypeScript, and performance optimization. Proven track record of transforming complex business requirements into intuitive, scalable user experiences that serve tens of thousands of users. Successfully led the development of mission-critical productivity tools, including Microsoft Office integrations and content management systems that streamlined workflows for 30,000+ internal banking professionals. Currently driving front-end innovation at Waste Management, leveraging cutting-edge technologies including Adobe Experience Manager, headless CMS architectures, and advanced monitoring solutions. Distinguished by rapid technical adaptation, from .NET enterprise development to modern JavaScript frameworks, consistently delivering high-impact solutions under aggressive timelines. Passionate about mentoring development teams, implementing best practices, and fostering collaborative engineering cultures. Maintains an extensive personal homelab infrastructure for 5+ years, continuously experimenting with containerization, automation, and emerging technologies to stay at the forefront of software engineering innovation. Experienced in self-hosting and optimizing Large Language Models for development workflows, leveraging AI-assisted coding tools as productivity multipliers while maintaining code quality and architectural integrity. Actively integrates modern AI development practices including prompt engineering, code generation assistance, and automated documentation to enhance team efficiency and accelerate delivery cycles.",
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "Ecleptic",
-        "url": "https://github.com/Ecleptic"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "cameron-k-green",
-        "url": "https://www.linkedin.com/in/cameron-k-green/"
-      }
-    ]
-  },
-  "work": {
-    "hidden": "none",
-    "jobs": [
-      {
-        "company": "Waste Management",
-        "position": "Front End Software Engineer",
-        "website": "https://wm.com",
-        "startDate": "2021-08",
-        "endDate": "Present",
-        "summary": "Spearhead front-end development initiatives for enterprise-scale web applications at wm.com, architecting modern, scalable solutions that enhance user experience and drive business objectives.",
-        "highlights": [
-          "Technology Stack: React, Next.js, Adobe Experience Manager (AEM), Sanity CMS, DataDog monitoring and analytics"
-        ]
-      },
-      {
-        "company": "JPMorgan Chase",
-        "position": "Associate Software Engineer",
-        "startDate": "2020-04",
-        "endDate": "2021-08",
-        "summary": "Transformed manual banking processes into modern solutions for Investment & Corporate Bankers, delivering intuitive user experiences and productivity tools.",
-        "highlights": [
-          "Developed Microsoft PowerPoint Productivity Extension automating formatting and standardization for 30,000+ internal users (.Net Framework, MongoDB, NUnit, Moq)",
-          "Built custom Content Management System enabling users to insert curated images and slides, streamlining content creation workflows",
-          "Created web-based CMS with SSO authentication using JPMC web authentication, providing secure asset management for Office applications (React, Redux, .Net Core, MongoDB)",
-          "Provided level 3 technical support for mission-critical applications and managed bi-weekly release cycles",
-          "Collaborated with business partners to understand banker needs and translate requirements into technical solutions"
-        ]
-      },
-      {
-        "company": "Zeal IT Consultants",
-        "position": "Software Engineer",
-        "startDate": "2018-08",
-        "endDate": "2020-03",
-        "summary": "Collaborated on agile development team delivering enterprise applications using .Net Core MVC, DynamoDB, and Android.",
-        "highlights": [
-          "Developed digital information card application, working with business associates to gather requirements and display client information (.Net Core, Angular 8)",
-          "Built appointment scheduling web application enabling representatives to set availabilities and users to schedule appointments with email notification system (.Net Core, Angular 6)",
-          "Created web-based graphical CMS with visual editor for client presentation application, replacing hundreds of dropdowns with intuitive interface inspired by Figma and Adobe XD (Angular 8, JavaScript)",
-          "Participated in agile ceremonies including daily standups, sprint planning, and retrospectives to deliver iterative value"
-        ]
-      },
-      {
-        "company": "Americans for Responsible Insurance",
-        "position": "Technical Director, Chief Developer",
-        "startDate": "2017-05",
-        "endDate": "2017-07",
-        "summary": "Rapidly developed and delivered a comprehensive full-stack data collection application within a two-month timeline to meet critical investor presentation requirements. Architected the complete technology stack including mobile application, backend server infrastructure, automated email systems, and data processing workflows for enterprise information management.",
-        "highlights": [
-          "Built full-stack application in 2 months using Ionic 2",
-          "Developed data collection and synchronization system",
-          "Created automated data parsing and distribution system"
-        ],
-        "hidden": "all"
-      },
-      {
-        "company": "Chad Jones Law Firm",
-        "position": "Systems Administrator",
-        "startDate": "2015-01",
-        "endDate": "2016-12",
-        "summary": "Progressed from ground-level intern to Systems Administrator, managing all electronic devices and IT infrastructure across multiple office locations.",
-        "highlights": [
-          "Advanced from IT support intern to full Systems Administrator, demonstrating rapid technical growth and reliability",
-          "Managed and maintained all electronic devices, networks, and systems across multiple office locations",
-          "Administered user accounts, security policies, and access controls to ensure data protection and compliance"
-        ]
-      }
-    ]
-  },
-  "education": {
-    "hidden": "resume",
-    "schools": [
-      {
-        "institution": "Sam Houston State University",
-        "area": "Computer Science",
-        "studyType": "Bachelor of Science",
-        "startDate": "2016-08",
-        "endDate": "2018-08",
-        "description": "Acquired skills for teamwork and created small projects for classes.",
-        "hidden": "resume"
-      },
-      {
-        "institution": "Blinn College",
-        "area": "Computer Science",
-        "studyType": "Associate of Applied Science",
-        "endDate": "2015",
-        "description": "Developed my passion for Computer Science, I learned the basics of programming and algorithm usage.",
-        "hidden": "resume"
-      }
-    ]
-  },
-  "volunteer": {
-    "hidden": "resume",
-    "volunteer": [
-      {
-        "organization": "Boy Scouts of America - Troop 51",
-        "position": "Eagle Scout",
-        "summary": "For my Eagle Project I coordinated over 1600 service hours.",
-        "hidden": "resume"
-      },
-      {
-        "organization": "Boy Scouts of America",
-        "position": "Order of the Arrow Member",
-        "summary": "Scouting's National Honor Society",
-        "hidden": "resume"
-      }
-    ]
-  },
-  "skills": {
-    "skills": [
-      {
-        "name": "Frontend",
-        "keywords": [
-          "JavaScript",
-          "HTML5",
-          "CSS3",
-          "SCSS",
-          "React",
-          "React Native",
-          "AngularJs",
-          "Angular",
-          "Ionic"
-        ]
-      },
-      {
-        "name": "Backend",
-        "keywords": ["Node.js", ".Net Core MVC", "C#", "Python", "Java", "C++"]
-      },
-      {
-        "name": "Database",
-        "keywords": ["MongoDB", "PostgreSQL", "Redis"]
-      },
-      {
-        "name": "Tools & Frameworks",
-        "keywords": [
-          "GraphQL",
-          "Socket.io",
-          "WebPack",
-          "Babel",
-          "Gatsby",
-          "ESLint",
-          "Figma"
-        ]
-      },
-      {
-        "name": "Mobile",
-        "keywords": ["Android", "React Native", "Ionic"]
-      }
-    ]
+    "siteUrl": "https://camerongreens.com",
+    "title": "Cameron Green's Portfolio"
   },
   "projects": {
     "hidden": "resume",
-
     "projects": [
       {
-        "name": "Personal Homelab Infrastructure",
         "description": "Designed and maintained a distributed homelab environment for 5+ years, running containerized services across multiple devices. Self-host productivity tools, automation systems, and media services with focus on privacy, performance, and reliability. Continuously experiment with new technologies and infrastructure patterns.",
+        "hidden": "resume",
         "highlights": [
           "Multi-device Docker deployment (Raspberry Pi, Unraid, macOS)",
           "Home automation with Home Assistant and Homebridge",
@@ -204,94 +76,93 @@
           "Digital library management with Calibre and Storyteller (EPUB3)",
           "Container orchestration and monitoring with Portainer"
         ],
-        "hidden": "resume"
+        "name": "Personal Homelab Infrastructure"
       },
       {
-        "name": "Interval Timer",
         "description": "Designed and developed a cross-platform interval timer application to enhance workout productivity and time management. Successfully published across web, Android, and iOS platforms, demonstrating proficiency in multi-platform development and user experience design.",
-        "image": "IntervalTimer.png",
+        "hidden": "resume",
         "highlights": [
           "Cross-platform timer application",
           "Published on web, Android, and iOS"
         ],
-        "url": "https://timer.camerongreens.com/",
+        "image": "IntervalTimer.png",
         "links": {
-          "website": "https://timer.camerongreens.com/",
-          "github": "https://github.com/Ecleptic/Interval-Timer",
-          "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
           "android": "https://play.google.com/store/apps/details?id=com.camerongreens.timer",
-          "ios": "https://apps.apple.com/us/app/ecleptics-interval-timer/id1494352474"
+          "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
+          "github": "https://github.com/Ecleptic/Interval-Timer",
+          "ios": "https://apps.apple.com/us/app/ecleptics-interval-timer/id1494352474",
+          "website": "https://timer.camerongreens.com/"
         },
-        "hidden": "resume"
+        "name": "Interval Timer",
+        "url": "https://timer.camerongreens.com/"
       },
       {
-        "name": "Vertical Solitaire",
         "description": "Developed a custom solitaire game application using JavaScript Canvas API to explore advanced graphics programming techniques and deliver an enhanced gaming experience. Successfully launched on both Android and iOS app stores.",
-        "image": "VerticalSolitaire.png",
         "highlights": [
           "Built with JavaScript Canvas",
           "Published on Android and iOS"
         ],
+        "image": "VerticalSolitaire.png",
         "links": {
           "android": "https://play.google.com/store/apps/details?id=com.verticalsolitaire.verticalsolitaire",
           "ios": "https://apps.apple.com/us/app/vertical-solitaire/id1493306412"
-        }
+        },
+        "name": "Vertical Solitaire"
       },
       {
-        "name": "Overwatch GraphQL API",
         "description": "Architected and implemented a GraphQL API service providing comprehensive data access for Overwatch game content, including heroes, maps, and game assets. Demonstrates expertise in API design, GraphQL schema development, and game data management.",
-        "url": "https://overwatchgraphqlapi.ecleptic.now.sh",
         "links": {
-          "website": "https://overwatchgraphqlapi.ecleptic.now.sh",
-          "github": "https://github.com/Ecleptic/overwatch_graphql_api"
-        }
+          "github": "https://github.com/Ecleptic/overwatch_graphql_api",
+          "website": "https://overwatchgraphqlapi.ecleptic.now.sh"
+        },
+        "name": "Overwatch GraphQL API",
+        "url": "https://overwatchgraphqlapi.ecleptic.now.sh"
       },
       {
-        "name": "Americans for Responsible Insurance",
         "description": "Rapidly prototyped and delivered a comprehensive full-stack application from concept to beta in 24 days to meet critical investor presentation deadlines. Developed complete technology stack including mobile application, backend server infrastructure, automated email systems, and database storage using Ionic 2 and AngularJS.",
-        "image": "ARI.png",
         "highlights": [
           "Full-stack app built in 24 days",
           "Ionic 2 and AngularJS",
           "Backend server with automated email system",
           "Database storage system",
           "Complete intellectual property ownership retained"
-        ]
+        ],
+        "image": "ARI.png",
+        "name": "Americans for Responsible Insurance"
       },
       {
-        "name": "Code Chat",
         "description": "Led JavaScript development for a collaborative real-time code execution platform as part of a 9-person academic team project. Architected WebSocket-based communication system connecting web application, chat server, and code compilation server to deliver optimal network performance and seamless user experience.",
-        "image": "CodeChat.png",
         "highlights": [
           "9-person team project",
           "Real-time code compilation and execution",
           "WebSocket-based architecture",
           "Lead JavaScript programmer"
         ],
-        "url": "https://github.com/NachoChef/CodeChat",
+        "image": "CodeChat.png",
         "links": {
           "github": "https://github.com/NachoChef/CodeChat"
-        }
+        },
+        "name": "Code Chat",
+        "url": "https://github.com/NachoChef/CodeChat"
       },
       {
-        "name": "My Pantry",
         "description": "Developed a full-stack pantry management application to advance SQL database skills and demonstrate JavaScript proficiency. Built with vanilla JavaScript frontend, Node.js backend, PostgreSQL database, and secure authentication system using crypto-js encryption.",
-        "image": "MyPantry.png",
+        "hidden": "all",
         "highlights": [
           "Pure JavaScript frontend (with axios)",
           "Node.js backend",
           "PostgreSQL database",
           "Encrypted authentication with crypto-js"
         ],
-        "url": "https://my-pantry.herokuapp.com/",
+        "image": "MyPantry.png",
         "links": {
-          "website": "https://my-pantry.herokuapp.com/",
-          "github": "https://github.com/Ecleptic/myPantry"
+          "github": "https://github.com/Ecleptic/myPantry",
+          "website": "https://my-pantry.herokuapp.com/"
         },
-        "hidden": "all"
+        "name": "My Pantry",
+        "url": "https://my-pantry.herokuapp.com/"
       },
       {
-        "name": "Overwatch Wallpapers",
         "description": "Developed a comprehensive Angular-based wallpaper gallery application over a weekend to strengthen framework expertise. Features advanced search functionality by heroes, maps, and artists, plus bulk download capabilities for enhanced user experience.",
         "highlights": [
           "Built in one weekend",
@@ -300,24 +171,167 @@
           "Bulk download feature",
           "Plan to rebuild with Vue or React with backend upload/removal capabilities"
         ],
-        "url": "https://ecleptic.github.io/overwatch_wallpapers/",
         "links": {
           "website": "https://ecleptic.github.io/overwatch_wallpapers/"
-        }
+        },
+        "name": "Overwatch Wallpapers",
+        "url": "https://ecleptic.github.io/overwatch_wallpapers/"
       },
       {
-        "name": "Instagram Scraper",
         "description": "Developed an automated web scraping solution for academic research purposes, enabling systematic collection and organization of Instagram content. Implemented configurable batch processing using NightmareJS to capture and categorize images efficiently.",
+        "hidden": "all",
         "highlights": [
           "NightmareJS web scraping",
           "Automated screenshot capture",
           "Configurable batch processing"
         ],
-        "url": "https://github.com/Ecleptic/NightmareInstagramScraper",
         "links": {
           "github": "https://github.com/Ecleptic/NightmareInstagramScraper"
         },
-        "hidden": "all"
+        "name": "Instagram Scraper",
+        "url": "https://github.com/Ecleptic/NightmareInstagramScraper"
+      }
+    ]
+  },
+  "skills": {
+    "skills": [
+      {
+        "keywords": [
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "SCSS",
+          "React",
+          "React Native",
+          "AngularJs",
+          "Angular",
+          "Ionic"
+        ],
+        "name": "Frontend"
+      },
+      {
+        "keywords": [
+          "Node.js",
+          ".Net Core MVC",
+          "C#",
+          "Python",
+          "Java",
+          "C++"
+        ],
+        "name": "Backend"
+      },
+      {
+        "keywords": [
+          "MongoDB",
+          "PostgreSQL",
+          "Redis"
+        ],
+        "name": "Database"
+      },
+      {
+        "keywords": [
+          "GraphQL",
+          "Socket.io",
+          "WebPack",
+          "Babel",
+          "Gatsby",
+          "ESLint",
+          "Figma"
+        ],
+        "name": "Tools & Frameworks"
+      },
+      {
+        "keywords": [
+          "Android",
+          "React Native",
+          "Ionic"
+        ],
+        "name": "Mobile"
+      }
+    ]
+  },
+  "volunteer": {
+    "hidden": "resume",
+    "volunteer": [
+      {
+        "hidden": "resume",
+        "organization": "Boy Scouts of America - Troop 51",
+        "position": "Eagle Scout",
+        "summary": "For my Eagle Project I coordinated over 1600 service hours."
+      },
+      {
+        "hidden": "resume",
+        "organization": "Boy Scouts of America",
+        "position": "Order of the Arrow Member",
+        "summary": "Scouting's National Honor Society"
+      }
+    ]
+  },
+  "work": {
+    "hidden": "none",
+    "jobs": [
+      {
+        "company": "Waste Management",
+        "endDate": "Present",
+        "highlights": [
+          "Technology Stack: React, Next.js, Adobe Experience Manager (AEM), Sanity CMS, DataDog monitoring and analytics"
+        ],
+        "position": "Front End Software Engineer",
+        "startDate": "2021-08",
+        "summary": "Spearhead front-end development initiatives for enterprise-scale web applications at wm.com, architecting modern, scalable solutions that enhance user experience and drive business objectives.",
+        "website": "https://wm.com"
+      },
+      {
+        "company": "JPMorgan Chase",
+        "endDate": "2021-08",
+        "highlights": [
+          "Developed Microsoft PowerPoint Productivity Extension automating formatting and standardization for 30,000+ internal users (.Net Framework, MongoDB, NUnit, Moq)",
+          "Built custom Content Management System enabling users to insert curated images and slides, streamlining content creation workflows",
+          "Created web-based CMS with SSO authentication using JPMC web authentication, providing secure asset management for Office applications (React, Redux, .Net Core, MongoDB)",
+          "Provided level 3 technical support for mission-critical applications and managed bi-weekly release cycles",
+          "Collaborated with business partners to understand banker needs and translate requirements into technical solutions"
+        ],
+        "position": "Associate Software Engineer",
+        "startDate": "2020-04",
+        "summary": "Transformed manual banking processes into modern solutions for Investment & Corporate Bankers, delivering intuitive user experiences and productivity tools."
+      },
+      {
+        "company": "Zeal IT Consultants",
+        "endDate": "2020-03",
+        "highlights": [
+          "Developed digital information card application, working with business associates to gather requirements and display client information (.Net Core, Angular 8)",
+          "Built appointment scheduling web application enabling representatives to set availabilities and users to schedule appointments with email notification system (.Net Core, Angular 6)",
+          "Created web-based graphical CMS with visual editor for client presentation application, replacing hundreds of dropdowns with intuitive interface inspired by Figma and Adobe XD (Angular 8, JavaScript)",
+          "Participated in agile ceremonies including daily standups, sprint planning, and retrospectives to deliver iterative value"
+        ],
+        "position": "Software Engineer",
+        "startDate": "2018-08",
+        "summary": "Collaborated on agile development team delivering enterprise applications using .Net Core MVC, DynamoDB, and Android."
+      },
+      {
+        "company": "Americans for Responsible Insurance",
+        "endDate": "2017-07",
+        "hidden": "all",
+        "highlights": [
+          "Built full-stack application in 2 months using Ionic 2",
+          "Developed data collection and synchronization system",
+          "Created automated data parsing and distribution system"
+        ],
+        "position": "Technical Director, Chief Developer",
+        "startDate": "2017-05",
+        "summary": "Rapidly developed and delivered a comprehensive full-stack data collection application within a two-month timeline to meet critical investor presentation requirements. Architected the complete technology stack including mobile application, backend server infrastructure, automated email systems, and data processing workflows for enterprise information management."
+      },
+      {
+        "company": "Chad Jones Law Firm",
+        "endDate": "2016-12",
+        "highlights": [
+          "Advanced from IT support intern to full Systems Administrator, demonstrating rapid technical growth and reliability",
+          "Managed and maintained all electronic devices, networks, and systems across multiple office locations",
+          "Administered user accounts, security policies, and access controls to ensure data protection and compliance"
+        ],
+        "position": "Systems Administrator",
+        "startDate": "2015-01",
+        "summary": "Progressed from ground-level intern to Systems Administrator, managing all electronic devices and IT infrastructure across multiple office locations."
       }
     ]
   }
