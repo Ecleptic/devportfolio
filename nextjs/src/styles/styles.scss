@@ -203,7 +203,7 @@ header {
     color: $base-color;
     font-size: 1.5em;
     z-index: 20;
-    padding: 0 7px;
+    padding: 7px;
     border-radius: 4px;
     background: $background;
     border: none;
@@ -222,12 +222,10 @@ header {
 
 #mobile-menu-close {
     display: none;
-    text-align: right;
     width: 100%;
     background: $background;
     font-size: 1.5em;
-    padding-right: 15px;
-    padding-top: 10px;
+    padding: 10px 15px;
     cursor: pointer;
     color: $base-color;
     border: none;
@@ -246,8 +244,8 @@ header {
         font-size: 0.5em;
         text-transform: uppercase;
     }
-    i {
-        vertical-align: middle;
+    svg {
+        flex-shrink: 0;
     }
 }
 
@@ -417,19 +415,18 @@ footer {
     color: #fff;
     span {
         cursor: pointer;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
         width: 35px;
         height: 35px;
         border-radius: 50%;
         border: 3px solid #2b7fb3; // lighten($base-color, 25%)
-        text-align: center;
     }
-    i {
+    svg {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: 5px;
-        ;
     }
 }
 
@@ -553,10 +550,11 @@ footer {
     float: left;
     z-index: 99;
     margin-left: 280px;
-    i {
-        display: block;
-        font-size: 2em;
-        margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+        font-size: 1.4em;
     }
 }
 
@@ -896,9 +894,16 @@ footer {
             display: block !important;
         }
     }
-    #mobile-menu-open,
+    #mobile-menu-open {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     #mobile-menu-close {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
     }
     #menu {
         height: 100%;
