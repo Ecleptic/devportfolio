@@ -1,269 +1,156 @@
-# Dev Portfolio Project
+# Cameron Green's Portfolio
 
-Personal portfolio website and resume generator for Cameron Green.
+Personal portfolio website with CMS-powered resume editing.
 
-**Live Site:** [camerongreens.com](https://camerongreens.com)
+**Live Site:** [camerongreens.com](https://camerongreens.com)  
+**Resume Editor:** [camkgreen.sanity.studio](https://camkgreen.sanity.studio)
 
-## Project Structure
+## 🚀 Quick Start
+
+### Local Development
+```bash
+# Start Next.js site
+cd nextjs
+npm install
+npm run dev                    # http://localhost:3000
+
+# Start Sanity Studio (optional)
+cd sanity-studio
+npm install
+npm run dev                    # http://localhost:3333
+```
+
+### Edit Your Resume
+**Option 1: Mobile/Web CMS**
+1. Visit: https://camkgreen.sanity.studio/
+2. Log in with GitHub/Google
+3. Edit your content
+4. Click "Publish"
+5. Sync changes: `cd scripts && npm run sync-from-sanity`
+
+**Option 2: Direct JSON Editing**
+1. Edit `resume.json`
+2. Optionally sync to Sanity: `cd scripts && npm run sync-to-sanity`
+
+## 📂 Project Structure
 
 ```
 devportfolio/
-├── resume.json                    # Single source of truth for all content
-├── nextjs/                        # Modern Next.js portfolio (CURRENT)
+├── resume.json                    # Single source of truth
+├── nextjs/                        # Next.js portfolio site
 │   ├── src/
-│   │   ├── app/                   # Next.js App Router
+│   │   ├── app/                   # Pages & API routes
 │   │   ├── components/            # React components
 │   │   └── styles/                # SCSS styles
-│   ├── public/
-│   │   └── Resume.pdf             # Auto-generated resume
-│   ├── package.json               # Dependencies & build scripts
-│   ├── netlify.toml               # Netlify deployment config
-│   └── out/                       # Static build output
-├── pdf/                           # Resume PDF generator
-│   ├── generate-resume.js         # PDF generator script (PDFKit)
-│   ├── package.json               # Generator dependencies
-│   └── output/                    # Default output directory
-│       └── Cameron_Green_Resume.pdf
-└── html/                          # Original HTML portfolio (LEGACY)
-    ├── index.html                 # Static HTML version
-    ├── scss/styles.scss           # Source styles
-    └── js/scripts.js              # Source JavaScript
+│   └── public/Resume.pdf          # Auto-generated PDF
+├── sanity-studio/                 # Content Management System
+│   ├── schemas/resume.ts          # Resume data structure
+│   └── sanity.config.ts           # Studio configuration
+├── scripts/                       # Sync utilities
+│   ├── sync-json-to-sanity.js     # Import JSON → Sanity
+│   └── sync-sanity-to-json.js     # Export Sanity → JSON
+└── pdf/                           # PDF generator
+    └── generate-resume.js         # Creates Resume.pdf
 ```
 
-## Quick Start
+## 🎨 Features
 
-### Development (Local)
+### Portfolio Website (Next.js)
+- **Next.js 15.5** with static generation
+- **Automated PDF generation** on every build
+- **Mobile-responsive** design
+- **Data-driven** from `resume.json`
+- **Deployed on Netlify** with auto-deployments
 
+### Content Management (Sanity)
+- **Mobile-optimized** editing interface
+- **OAuth authentication** (GitHub/Google)
+- **Bidirectional sync** with resume.json
+- **Version control** via Git
+- **Accessible anywhere** via https://camkgreen.sanity.studio/
+
+### Resume PDF Generator
+- **Automated** PDF creation from resume.json
+- **Professional** single-page layout
+- **Customizable** styling
+- **CLI support** for manual generation
+
+## 🔄 Workflows
+
+### Update Resume (via CMS)
+1. Edit in Sanity Studio
+2. `cd scripts && npm run sync-from-sanity`
+3. `git add resume.json && git commit -m "Update resume"`
+4. `git push` (triggers Netlify deployment)
+
+### Update Resume (via JSON)
+1. Edit `resume.json` directly
+2. (Optional) `cd scripts && npm run sync-to-sanity`
+3. `git add resume.json && git commit -m "Update resume"`
+4. `git push` (triggers Netlify deployment)
+
+### Generate PDF Manually
 ```bash
-cd nextjs
-npm install
-npm run dev                        # Starts dev server at http://localhost:3000
-                                   # Automatically generates Resume.pdf first
-```
-
-### Production Build
-
-```bash
-cd nextjs
-npm run build                      # Generates static site in out/
-                                   # Automatically generates Resume.pdf first
-```
-
-### PDF Generation Only
-
-```bash
-# Generate to default location (pdf/output/)
 cd pdf
-node generate-resume.js
-
-# Generate to custom location
 node generate-resume.js --output /path/to/output.pdf
-
-# From Next.js directory (automatic in builds)
-cd nextjs
-npm run generate-pdf               # Outputs to public/Resume.pdf
 ```
 
-## Components
+## 🛠️ Tech Stack
 
-### 1. Resume Data (`resume.json`)
-**Single source of truth** containing:
-- Basic information (name, email, website, summary)
-- Work experience with highlights
-- Education history
-- Technical skills (categorized)
-- Volunteer work
-- Personal projects
-- Social profiles (GitHub, LinkedIn)
+- **Frontend:** Next.js 15, React, TypeScript, SCSS
+- **CMS:** Sanity Studio with custom schema
+- **PDF:** PDFKit with custom layout
+- **Deployment:** Netlify (static export)
+- **Version Control:** Git with automated sync
 
-**Hidden Flags**: Content with `"hidden": "all"` or `"hidden": "site"` is excluded from the website (but may appear in PDF).
+## 📚 Documentation
 
-### 2. Next.js Portfolio (`nextjs/`) - **CURRENT**
-Modern, data-driven portfolio site:
-- **Next.js 15.5** with App Router & TypeScript
-- **Static Site Generation (SSG)** - Pre-rendered at build time
-- **Data-driven** - All content from `resume.json`
-- **Identical styling** - Same SCSS as original HTML portfolio
-- **Automated PDF generation** - Runs automatically in builds
-- **Deployed on Netlify** - Live at camerongreens.com
+For detailed information about the Sanity CMS integration, see:
+- **[COMPLETION_SUMMARY.md](./COMPLETION_SUMMARY.md)** - Complete guide to the CMS system
 
-**Key Features:**
-- React components for modularity
-- Smooth scroll animations
-- Mobile-responsive design
-- Automatic PDF generation on build
-- Zero runtime dependencies
+## 🔐 Environment Variables
 
-### 3. PDF Resume Generator (`pdf/`)
-Automated PDF generation using PDFKit:
-- Reads from `resume.json`
-- Professional single-page layout
-- Customizable colors and styling
-- **CLI support** - `--output` flag for custom paths
-- Auto-creates directories as needed
+Required for full functionality:
 
-### 4. HTML Portfolio (`html/`) - **LEGACY**
-Original static HTML version:
-- Gulp build system
-- jQuery animations
-- Manual content editing
-- **Note:** Retained for reference, not actively maintained
-
-## Workflow
-
-### Update Your Resume & Portfolio
-
-1. **Edit `resume.json`** with your latest information
-2. **Build & Deploy:**
-   ```bash
-   cd nextjs
-   npm run build                   # Generates PDF + builds site
-   git add .
-   git commit -m "Update resume"
-   git push                        # Netlify auto-deploys
-   ```
-
-### Local Development
-
-```bash
-cd nextjs
-npm run dev                        # Auto-generates PDF, starts dev server
-# Visit http://localhost:3000
-# Resume available at http://localhost:3000/Resume.pdf
+**`nextjs/.env.local`:**
+```env
+NEXT_PUBLIC_SANITY_PROJECT_ID=qet8gm0s
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_WEBHOOK_SECRET=<your-secret>
+GITHUB_TOKEN=<your-token>
+GITHUB_REPO=Ecleptic/devportfolio
+GITHUB_BRANCH=master
 ```
 
-### Automated Builds
-
-The `prebuild` and `predev` npm hooks automatically generate the PDF before building or starting the dev server. No manual steps needed!
-
-## Deployment
-
-### Netlify (Current)
-
-The site is deployed to [camerongreens.com](https://camerongreens.com) via Netlify.
-
-**Automatic Deployment:**
-- Push to GitHub triggers automatic build
-- PDF is generated during build process
-- Static site deployed from `nextjs/out/`
-
-**Manual Deployment:**
-```bash
-cd nextjs
-npm run build                      # Builds to out/
-netlify deploy --prod              # Deploy to production
+**`sanity-studio/.env.local`:**
+```env
+SANITY_STUDIO_PROJECT_ID=qet8gm0s
+SANITY_STUDIO_DATASET=production
+SANITY_API_TOKEN=<your-token>
+GITHUB_TOKEN=<your-token>
+SANITY_WEBHOOK_SECRET=<your-secret>
 ```
 
-**Configuration:**
-- Base directory: `nextjs`
-- Build command: `npm run build` (includes PDF generation via prebuild hook)
-- Publish directory: `nextjs/out`
+## 📱 Mobile Editing
 
-## Package Scripts
+Add Sanity Studio to your phone:
+1. Visit https://camkgreen.sanity.studio/ on your phone
+2. Log in with GitHub or Google
+3. Tap "Add to Home Screen" (iOS) or "Add to Home screen" (Android)
+4. Edit resume anywhere!
 
-### Next.js (`nextjs/package.json`)
+## 🚢 Deployment
 
-```json
-{
-  "scripts": {
-    "generate-pdf": "node ../pdf/generate-resume.js --output public/Resume.pdf",
-    "predev": "npm run generate-pdf",      // Runs before dev
-    "dev": "next dev --turbopack",
-    "prebuild": "npm run generate-pdf",    // Runs before build
-    "build": "next build --turbopack",
-    "start": "next start"
-  }
-}
-```
+**Automatic:** Push to GitHub → Netlify builds and deploys  
+**Manual:** `cd nextjs && npm run build` → Upload `out/` directory
 
-### PDF Generator (`pdf/package.json`)
+## 📄 License
 
-```json
-{
-  "scripts": {
-    "generate": "node generate-resume.js"  // Outputs to pdf/output/
-  }
-}
-```
+MIT License - See LICENSE.md
 
-## Features
-
-### Next.js Portfolio
-- ✅ Static Site Generation (SSG)
-- ✅ Data-driven from `resume.json`
-- ✅ Responsive design (mobile-first)
-- ✅ Smooth scroll animations
-- ✅ Timeline experience section
-- ✅ Project showcase with dynamic images
-- ✅ Categorized skills display
-- ✅ Volunteer section
-- ✅ Contact section with social links
-- ✅ Automatic PDF generation
-- ✅ SEO-friendly meta tags
-- ✅ Modern color functions (no Sass deprecations)
-- ✅ Consistent drop shadows across all cards
-
-### PDF Resume Generator
-- ✅ Professional single-page layout
-- ✅ Split-color name styling (Cameron in blue, Green in green)
-- ✅ Auto-formatted dates and bullets
-- ✅ Customizable colors matching portfolio
-- ✅ CLI support with `--output` flag
-- ✅ Smart path resolution
-- ✅ Auto-creates output directories
-- ✅ PDF metadata for searchability
-
-## Technologies
-
-- **Next.js 15.5** - React framework with SSG
-- **TypeScript** - Type safety
-- **Turbopack** - Fast bundler
-- **SASS/SCSS** - CSS preprocessing
-- **PDFKit** - PDF generation
-- **Netlify** - Hosting and continuous deployment
-- **GitHub** - Version control and CI/CD
-
-## Documentation
-
-- `nextjs/README.md` - Next.js portfolio documentation
-- `pdf/RESUME_GENERATOR.md` - PDF generator documentation
-- `html/README.md` - Legacy HTML portfolio documentation
-
-## License
-
-See `html/LICENSE.md` for license information.
-
----
-
-**Made with ❤️ by Cameron Green**
-
-## Technologies
-
-**Portfolio:**
-- HTML5, CSS3/SCSS, JavaScript
-- Bootstrap Grid
-- Font Awesome
-- Gulp, Babel, Sass
-
-**Resume Generator:**
-- Node.js
-- PDFKit
-- JSON-based data structure
-
-## Documentation
-
-- `html/README.md` - Portfolio website documentation
-- `pdf/RESUME_GENERATOR.md` - Resume generator documentation
-- `pdf/.github/pdfkit-api-reference.md` - PDFKit API reference
-- `.github/copilot-instructions.md` - Portfolio design system reference
-
-## Author
+## 👤 Author
 
 **Cameron Green**
-- Website: [camerongreens.com](https://camerongreens.com)
+- Website: https://camerongreens.com
 - GitHub: [@Ecleptic](https://github.com/Ecleptic)
 - LinkedIn: [cameron-k-green](https://www.linkedin.com/in/cameron-k-green/)
-
-## License
-
-MIT
