@@ -12,6 +12,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { ResumeData, shouldShowSection } from '../types/resume';
 import ScrollEffects from '../components/ScrollEffects';
+import KonamiCode from '../components/KonamiCode';
 
 export default function Home() {
   // Read resume.json at build time
@@ -33,6 +34,7 @@ export default function Home() {
       </main>
       <Footer basics={resumeData.basics} />
       <ScrollEffects />
+      <KonamiCode />
     </>
   );
 }
