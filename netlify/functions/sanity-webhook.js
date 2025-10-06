@@ -17,7 +17,6 @@ export default async (req, context) => {
     
     if (!githubToken) {
       console.error('GITHUB_TOKEN not configured');
-      console.error('Available env vars:', Object.keys(process.env).filter(k => !k.includes('SECRET')));
       return new Response('Server configuration error', { status: 500 });
     }
 
