@@ -13,10 +13,11 @@ export default async (req, context) => {
 
   try {
     // Get the GitHub token from environment variables
-    const githubToken = Netlify.env.get('GITHUB_TOKEN');
+    const githubToken = process.env.GITHUB_TOKEN;
     
     if (!githubToken) {
       console.error('GITHUB_TOKEN not configured');
+      console.error('Available env vars:', Object.keys(process.env).filter(k => !k.includes('SECRET')));
       return new Response('Server configuration error', { status: 500 });
     }
 
