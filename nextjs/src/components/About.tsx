@@ -5,6 +5,12 @@ interface AboutProps {
 }
 
 export default function About({ basics }: AboutProps) {
+  // Split on double newlines to get paragraphs, filter out empty ones
+  const paragraphs = basics.summary
+    .split('\n\n')
+    .map(p => p.trim())
+    .filter(p => p.length > 0);
+
   return (
     <div id="about">
       <div className="container">
@@ -13,7 +19,7 @@ export default function About({ basics }: AboutProps) {
             <h2 className="heading">About Me</h2>
           </div>
           <div className="col-md-8">
-            {basics.summary.split('\n').map((paragraph, index) => (
+            {paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
           </div>
