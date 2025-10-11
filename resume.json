@@ -40,6 +40,40 @@
       }
     ]
   },
+  "homelab": {
+    "hidden": "all",
+    "summary": "Maintaining a distributed home lab infrastructure for 5+ years, running containerized services and self-hosted applications across multiple devices. Focused on privacy, automation, performance optimization, and continuous learning through hands-on experimentation with emerging technologies.",
+    "devices": [
+      {
+        "name": "Mac Mini",
+        "description": "Primary compute nodes running Docker containers in parallel for high-availability services",
+        "services": [
+          "Home Assistant",
+          "Homebridge",
+          "Portainer",
+          "Tailscale",
+          "Pi-hole"
+        ]
+      },
+      {
+        "name": "Raspberry Pi",
+        "description": "Lightweight Docker host for network services and IoT automation",
+        "services": [
+          "IoT automation"
+        ]
+      },
+      {
+        "name": "Unraid Server",
+        "description": "Network-attached storage and media server with Docker support",
+        "services": [
+          "Calibre (eBook management)",
+          "Nextcloud (Private cloud)",
+          "Immich (Photo management)",
+          "Media storage and streaming"
+        ]
+      }
+    ]
+  },
   "metadata": {
     "description": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with proven track record at JPMorgan Chase and Waste Management.",
     "keywords": [

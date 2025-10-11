@@ -20,6 +20,31 @@ async function syncJsonToSanity() {
     const resumeData = JSON.parse(readFileSync(RESUME_JSON_PATH, 'utf-8'));
     console.log('✓ Resume data loaded\n');
 
+    // Helper function to convert literal \n to actual newlines in text fields
+    const normalizeText = (obj) => {
+      if (typeof obj === 'string') {
+        // Only convert if it looks like escaped newlines (has \n but not actual newlines)
+        if (obj.includes('\\n') && !obj.includes('\n')) {
+          return obj.replace(/\\n/g, '\n');
+        }
+        return obj;
+      }
+      if (Array.isArray(obj)) {
+        return obj.map(normalizeText);
+      }
+      if (obj && typeof obj === 'object') {
+        const normalized = {};
+        for (const [key, value] of Object.entries(obj)) {
+          normalized[key] = normalizeText(value);
+        }
+        return normalized;
+      }
+      return obj;
+    };
+
+    // Normalize the resume data to handle text fields properly
+    const normalizedData = normalizeText(resumeData);
+
     // Check if document exists
     console.log('🔍 Checking for existing Sanity document...');
     const existingDoc = await client.getDocument(RESUME_DOCUMENT_ID).catch(() => null);
@@ -28,14 +53,14 @@ async function syncJsonToSanity() {
     const sanityDoc = {
       _id: RESUME_DOCUMENT_ID,
       _type: 'resume',
-      ...resumeData,
+      ...normalizedData,
     };
 
     if (existingDoc) {
       console.log('📝 Updating existing document...');
       const result = await client
         .patch(RESUME_DOCUMENT_ID)
-        .set(resumeData)
+        .set(normalizedData)
         .commit();
       console.log('✓ Document updated successfully');
       console.log(`   Document ID: ${result._id}`);

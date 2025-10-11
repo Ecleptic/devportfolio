@@ -181,6 +181,72 @@ export const resume = defineType({
       ],
     }),
 
+    // Home Lab section
+    defineField({
+      name: 'homelab',
+      title: 'Home Lab Infrastructure',
+      type: 'object',
+      fields: [
+        {
+          name: 'hidden',
+          type: 'string',
+          title: 'Visibility',
+          options: {
+            list: [
+              { title: 'Visible', value: 'none' },
+              { title: 'Hide All', value: 'all' },
+              { title: 'Resume Only', value: 'resume' },
+            ],
+          },
+        },
+        { 
+          name: 'summary', 
+          type: 'text', 
+          title: 'Summary', 
+          rows: 4,
+          description: 'Brief overview of your home lab infrastructure and philosophy'
+        },
+        {
+          name: 'devices',
+          type: 'array',
+          title: 'Devices',
+          of: [
+            defineArrayMember({
+              type: 'object',
+              fields: [
+                { 
+                  name: 'name', 
+                  type: 'string', 
+                  title: 'Device Name',
+                  description: 'e.g., "Mac Mini (2x)" or "Raspberry Pi 4"'
+                },
+                { 
+                  name: 'description', 
+                  type: 'text', 
+                  title: 'Description', 
+                  rows: 2,
+                  description: 'What this device is used for'
+                },
+                {
+                  name: 'services',
+                  type: 'array',
+                  title: 'Services Running',
+                  of: [{ type: 'string' }],
+                  description: 'List of applications/services running on this device'
+                },
+              ],
+              preview: {
+                select: {
+                  title: 'name',
+                  subtitle: 'description',
+                },
+              },
+            }),
+          ],
+        },
+      ],
+    }),
+
     // Volunteer section
     defineField({
       name: 'volunteer',
