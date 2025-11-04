@@ -4,12 +4,22 @@ export const resume = defineType({
   name: 'resume',
   title: 'Resume Data',
   type: 'document',
+  // Mobile-friendly options
+  options: {
+    // Collapse sections by default on mobile for better overview
+    collapsible: true,
+    collapsed: false,
+  },
   fields: [
     // Metadata section
     defineField({
       name: 'metadata',
       title: 'Site Metadata',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: true,
+      },
       fields: [
         { name: 'title', type: 'string', title: 'Page Title' },
         { name: 'description', type: 'text', title: 'Meta Description' },
@@ -30,6 +40,10 @@ export const resume = defineType({
       name: 'basics',
       title: 'Basic Information',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         { name: 'name', type: 'string', title: 'Full Name' },
         { name: 'label', type: 'string', title: 'Professional Title' },
@@ -59,6 +73,10 @@ export const resume = defineType({
       name: 'work',
       title: 'Work Experience',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         {
           name: 'hidden',
@@ -129,6 +147,10 @@ export const resume = defineType({
       name: 'education',
       title: 'Education',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         {
           name: 'hidden',
@@ -186,6 +208,10 @@ export const resume = defineType({
       name: 'homelab',
       title: 'Home Lab Infrastructure',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         {
           name: 'hidden',
@@ -252,6 +278,10 @@ export const resume = defineType({
       name: 'volunteer',
       title: 'Volunteer Experience',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         {
           name: 'hidden',
@@ -306,6 +336,10 @@ export const resume = defineType({
       name: 'skills',
       title: 'Skills',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         {
           name: 'skills',
@@ -346,6 +380,10 @@ export const resume = defineType({
       name: 'projects',
       title: 'Projects',
       type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
       fields: [
         {
           name: 'hidden',
