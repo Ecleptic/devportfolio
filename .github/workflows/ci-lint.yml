@@ -88,17 +88,7 @@ jobs:
         run: npm audit --audit-level=moderate
         continue-on-error: true
 
-  dependency-review:
-    name: Dependency Review (PR only)
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
+  # dependency-review:
+  #   Removed: Requires GitHub Advanced Security (paid feature for private repos)
+  #   To enable: Go to Settings > Code security and analysis > Enable Dependency graph and GitHub Advanced Security
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Dependency Review
-        uses: actions/dependency-review-action@v4
-        with:
-          fail-on-severity: moderate
-          deny-licenses: GPL-3.0, AGPL-3.0
