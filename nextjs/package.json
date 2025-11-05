@@ -7,7 +7,7 @@
     "predev": "npm run generate-pdf",
     "dev": "next dev --turbopack",
     "prebuild": "npm run generate-pdf",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",

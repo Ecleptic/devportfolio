@@ -28,7 +28,11 @@ jobs:
           cache: 'npm'
           cache-dependency-path: nextjs/package-lock.json
 
-      - name: Install dependencies
+      - name: Install PDF dependencies
+        working-directory: ./pdf
+        run: npm install
+
+      - name: Install Next.js dependencies
         working-directory: ./nextjs
         run: npm ci
 
@@ -69,12 +73,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: sanity-studio/package-lock.json
 
       - name: Install dependencies
         working-directory: ./sanity-studio
-        run: npm ci
+        run: npm install
 
       - name: Security audit (Sanity)
         working-directory: ./sanity-studio

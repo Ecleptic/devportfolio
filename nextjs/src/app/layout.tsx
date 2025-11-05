@@ -1,15 +1,8 @@
 import type { Metadata } from 'next';
-import { Lato } from 'next/font/google';
 import fs from 'fs';
 import path from 'path';
 import { ResumeData } from '../types/resume';
 import '../styles/globals.scss';
-
-const lato = Lato({
-  weight: ['300', '400', '700', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 // Read metadata from resume.json
 const resumePath = path.join(process.cwd(), '..', 'resume.json');
@@ -65,10 +58,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`no-js ${lato.className}`}>
+    <html lang="en" className="no-js">
       <head>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+          rel="stylesheet"
+        />
         <link href="/bootstrap.min.css" rel="stylesheet" />
       </head>
       <body>{children}</body>
