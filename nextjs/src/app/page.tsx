@@ -26,11 +26,17 @@ export default function Home() {
         <Lead basics={resumeData.basics} />
         <About basics={resumeData.basics} />
         {shouldShowSection(resumeData.work.hidden) && <Experience work={resumeData.work} />}
-        {shouldShowSection(resumeData.projects.hidden) && <Projects projects={resumeData.projects} />}
-        {shouldShowSection(resumeData.education.hidden) && <Education education={resumeData.education} />}
-        {shouldShowSection(resumeData.volunteer.hidden) && <Volunteer volunteer={resumeData.volunteer} />}
+        {shouldShowSection(resumeData.projects.hidden) && (
+          <Projects projects={resumeData.projects} />
+        )}
+        {shouldShowSection(resumeData.education.hidden) && (
+          <Education education={resumeData.education} />
+        )}
+        {shouldShowSection(resumeData.volunteer.hidden) && (
+          <Volunteer volunteer={resumeData.volunteer} />
+        )}
         {shouldShowSection(resumeData.skills.hidden) && <Skills skills={resumeData.skills} />}
-        <Contact basics={resumeData.basics} />
+        <Contact />
       </main>
       <Footer basics={resumeData.basics} />
       <ScrollEffects />

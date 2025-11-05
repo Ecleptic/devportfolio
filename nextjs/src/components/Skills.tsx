@@ -7,7 +7,7 @@ interface SkillsProps {
 export default function Skills({ skills }: SkillsProps) {
   // Flatten all keywords from all skill categories into a single array
   const allSkills = skills.skills.flatMap((skillCategory) => skillCategory.keywords);
-  
+
   // Remove duplicates (in case a skill appears in multiple categories)
   const uniqueSkills = Array.from(new Set(allSkills));
 

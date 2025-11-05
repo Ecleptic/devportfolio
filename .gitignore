@@ -1,6 +1,6 @@
 # Node modules
 node_modules/
-package-lock.json
+# package-lock.json should be committed for applications (commented out to allow CI to work)
 
 # Generated files
 pdf/output/*.pdf

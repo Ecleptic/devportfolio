@@ -1,10 +1,4 @@
-import type { ResumeData } from '../types/resume';
-
-interface ContactProps {
-  basics: ResumeData['basics'];
-}
-
-export default function Contact({ basics }: ContactProps) {
+export default function Contact() {
   return (
     <div id="contact">
       <h2>Get in Touch</h2>

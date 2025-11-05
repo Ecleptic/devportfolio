@@ -8,8 +8,8 @@ export default function About({ basics }: AboutProps) {
   // Split on double newlines to get paragraphs, filter out empty ones
   const paragraphs = basics.summary
     .split('\n\n')
-    .map(p => p.trim())
-    .filter(p => p.length > 0);
+    .map((p) => p.trim())
+    .filter((p) => p.length > 0);
 
   return (
     <div id="about">

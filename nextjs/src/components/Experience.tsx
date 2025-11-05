@@ -7,7 +7,9 @@ interface ExperienceProps {
 }
 
 function formatDate(dateString: string): string {
-  if (dateString === 'Present') return 'Present';
+  if (dateString === 'Present') {
+    return 'Present';
+  }
   const [year, month] = dateString.split('-');
   const monthNames = [
     'January',
