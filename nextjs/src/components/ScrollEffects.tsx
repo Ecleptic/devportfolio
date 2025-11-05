@@ -28,12 +28,12 @@ export default function ScrollEffects() {
 
     // Timeline animations - fade in on scroll
     const timelineBlocks = document.querySelectorAll('#experience-timeline > div');
-    
+
     const checkScroll = () => {
       timelineBlocks.forEach((block) => {
         const rect = block.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight * 0.75;
-        
+
         if (isVisible) {
           block.classList.add('is-visible');
         }

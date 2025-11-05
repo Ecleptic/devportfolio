@@ -6,11 +6,11 @@ interface EducationProps {
 }
 
 export default function Education({ education }: EducationProps) {
-  const visibleSchools = education.schools.filter((school) =>
-    shouldShowItem(school.hidden)
-  );
+  const visibleSchools = education.schools.filter((school) => shouldShowItem(school.hidden));
 
-  if (visibleSchools.length === 0) return null;
+  if (visibleSchools.length === 0) {
+    return null;
+  }
 
   return (
     <div id="education">

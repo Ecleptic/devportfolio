@@ -6,11 +6,11 @@ interface VolunteerProps {
 }
 
 export default function Volunteer({ volunteer }: VolunteerProps) {
-  const visibleVolunteer = volunteer.volunteer.filter((vol) =>
-    shouldShowItem(vol.hidden)
-  );
+  const visibleVolunteer = volunteer.volunteer.filter((vol) => shouldShowItem(vol.hidden));
 
-  if (visibleVolunteer.length === 0) return null;
+  if (visibleVolunteer.length === 0) {
+    return null;
+  }
 
   return (
     <div id="volunteer" className="optional-section background-alt">

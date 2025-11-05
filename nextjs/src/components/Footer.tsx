@@ -15,7 +15,9 @@ export default function Footer({ basics }: FooterProps) {
       <div className="container">
         <div className="row">
           <div className="col-sm-5 copyright">
-            <p>Copyright &copy; {currentYear} {basics.name}</p>
+            <p>
+              Copyright &copy; {currentYear} {basics.name}
+            </p>
           </div>
           <div className="col-sm-2 top">
             <span id="to-top">

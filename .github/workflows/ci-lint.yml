@@ -1,0 +1,97 @@
+name: CI - Lint, Format, Type Check & Security
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - 'claude/**'
+  pull_request:
+    branches:
+      - master
+      - main
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  code-quality:
+    name: Code Quality & Security Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: nextjs/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./nextjs
+        run: npm ci
+
+      - name: Run ESLint
+        working-directory: ./nextjs
+        run: npm run lint
+
+      - name: Check code formatting with Prettier
+        working-directory: ./nextjs
+        run: npm run format:check
+
+      - name: TypeScript type checking
+        working-directory: ./nextjs
+        run: npm run type-check
+
+      - name: Security audit
+        working-directory: ./nextjs
+        run: npm audit --audit-level=moderate
+        continue-on-error: true # Don't fail the build on audit issues, but report them
+
+      - name: Build Next.js application
+        working-directory: ./nextjs
+        run: npm run build
+
+      - name: Check build output
+        if: success()
+        run: echo "✅ All checks passed successfully!"
+
+  sanity-checks:
+    name: Sanity Studio Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: sanity-studio/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./sanity-studio
+        run: npm ci
+
+      - name: Security audit (Sanity)
+        working-directory: ./sanity-studio
+        run: npm audit --audit-level=moderate
+        continue-on-error: true
+
+  dependency-review:
+    name: Dependency Review (PR only)
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: moderate
+          deny-licenses: GPL-3.0, AGPL-3.0

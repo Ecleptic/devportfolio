@@ -6,11 +6,11 @@ interface ProjectsProps {
 }
 
 export default function Projects({ projects }: ProjectsProps) {
-  const visibleProjects = projects.projects.filter((project) =>
-    shouldShowItem(project.hidden)
-  );
+  const visibleProjects = projects.projects.filter((project) => shouldShowItem(project.hidden));
 
-  if (visibleProjects.length === 0) return null;
+  if (visibleProjects.length === 0) {
+    return null;
+  }
 
   return (
     <div id="projects" className="background-alt">
@@ -22,7 +22,10 @@ export default function Projects({ projects }: ProjectsProps) {
             // Use project name as key (more stable than index)
             const projectKey = project.name.toLowerCase().replace(/\s+/g, '-');
             return (
-              <div key={projectKey} className={`project shadow-large ${!hasImage ? 'no-image' : ''}`}>
+              <div
+                key={projectKey}
+                className={`project shadow-large ${!hasImage ? 'no-image' : ''}`}
+              >
                 <div className="project-image">
                   {hasImage && <img src={`/images/${project.image}`} alt={project.name} />}
                 </div>

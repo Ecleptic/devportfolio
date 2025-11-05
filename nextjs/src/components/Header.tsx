@@ -55,8 +55,8 @@ export default function Header() {
       </button>
 
       <header className={mobileMenuOpen ? 'active' : ''}>
-        <button 
-          id="mobile-menu-close" 
+        <button
+          id="mobile-menu-close"
           onClick={handleCloseMenu}
           type="button"
           aria-label="Close menu"

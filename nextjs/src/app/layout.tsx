@@ -1,26 +1,26 @@
-import type { Metadata } from "next";
-import { Lato } from "next/font/google";
-import fs from "fs";
-import path from "path";
-import { ResumeData } from "../types/resume";
-import "../styles/globals.scss";
+import type { Metadata } from 'next';
+import { Lato } from 'next/font/google';
+import fs from 'fs';
+import path from 'path';
+import { ResumeData } from '../types/resume';
+import '../styles/globals.scss';
 
 const lato = Lato({
-  weight: ["300", "400", "700", "900"],
-  subsets: ["latin"],
-  display: "swap",
+  weight: ['300', '400', '700', '900'],
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 // Read metadata from resume.json
-const resumePath = path.join(process.cwd(), "..", "resume.json");
-const resumeData: ResumeData = JSON.parse(fs.readFileSync(resumePath, "utf8"));
+const resumePath = path.join(process.cwd(), '..', 'resume.json');
+const resumeData: ResumeData = JSON.parse(fs.readFileSync(resumePath, 'utf8'));
 const meta = resumeData.metadata || {
   title: "Cameron Green's Portfolio",
-  description: "Full Stack Web Developer - Software Engineer Portfolio",
-  keywords: ["Cameron Green", "Software Engineer", "Web Developer"],
-  siteUrl: "https://camerongreens.com",
+  description: 'Full Stack Web Developer - Software Engineer Portfolio',
+  keywords: ['Cameron Green', 'Software Engineer', 'Web Developer'],
+  siteUrl: 'https://camerongreens.com',
   siteName: "Cameron Green's Portfolio",
-  locale: "en_US",
+  locale: 'en_US',
 };
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   publisher: resumeData.basics.name,
   metadataBase: new URL(meta.siteUrl),
   alternates: {
-    canonical: "/",
+    canonical: '/',
   },
   openGraph: {
     title: meta.title,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     url: meta.siteUrl,
     siteName: meta.siteName,
     locale: meta.locale,
-    type: "website",
+    type: 'website',
   },
   robots: {
     index: true,
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
   },
 };
 
