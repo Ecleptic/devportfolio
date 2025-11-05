@@ -30,11 +30,15 @@ jobs:
 
       - name: Install PDF dependencies
         working-directory: ./pdf
-        run: npm install
+        run: |
+          npm install --legacy-peer-deps
+          echo "✅ PDF dependencies installed"
 
       - name: Install Next.js dependencies
         working-directory: ./nextjs
-        run: npm ci
+        run: |
+          npm ci --legacy-peer-deps
+          echo "✅ Next.js dependencies installed"
 
       - name: Run ESLint
         working-directory: ./nextjs
@@ -55,6 +59,9 @@ jobs:
 
       - name: Build Next.js application
         working-directory: ./nextjs
+        env:
+          NODE_ENV: production
+          NEXT_TELEMETRY_DISABLED: 1
         run: npm run build
 
       - name: Check build output
