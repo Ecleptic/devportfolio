@@ -1,0 +1,45 @@
+# Netlify configuration for Sanity Studio
+# This enables deploy previews for testing mobile UI and other changes
+
+[build]
+  base = "sanity-studio"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+# Production builds
+[context.production]
+  command = "npm install && npm run build"
+
+# Deploy previews (for PRs)
+[context.deploy-preview]
+  command = "npm install && npm run build"
+
+# Branch deploys (for non-PR branches)
+[context.branch-deploy]
+  command = "npm install && npm run build"
+
+# Environment variables for all contexts
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Redirects for Sanity Studio SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for better security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
