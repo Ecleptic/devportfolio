@@ -668,6 +668,13 @@ footer {
   }
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+}
+
 .no-image {
   .project-info {
     position: relative;
