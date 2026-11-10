@@ -40,5 +40,10 @@
     "eslint-plugin-security": "^3.0.1",
     "prettier": "^3.6.2",
     "typescript": "^5"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.32"
+    }
   }
 }

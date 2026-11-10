@@ -18,6 +18,7 @@ export default function Home() {
   // Read resume.json at build time
   const resumePath = path.join(process.cwd(), '..', 'resume.json');
   const resumeData: ResumeData = JSON.parse(fs.readFileSync(resumePath, 'utf8'));
+  const projectImageFilenames = fs.readdirSync(path.join(process.cwd(), 'public', 'images'));
 
   return (
     <>
@@ -27,7 +28,7 @@ export default function Home() {
         <About basics={resumeData.basics} />
         {shouldShowSection(resumeData.work.hidden) && <Experience work={resumeData.work} />}
         {shouldShowSection(resumeData.projects.hidden) && (
-          <Projects projects={resumeData.projects} />
+          <Projects projects={resumeData.projects} imageFilenames={projectImageFilenames} />
         )}
         {shouldShowSection(resumeData.education.hidden) && (
           <Education education={resumeData.education} />
