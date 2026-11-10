@@ -15,7 +15,7 @@
         "username": "cameron-k-green"
       }
     ],
-    "summary": "Senior Front End Software Engineer with 10+ years of experience building enterprise-scale applications for Fortune 500 companies including JPMorgan Chase and Waste Management. Specialized in React ecosystems with expertise in Next.js, TypeScript, and performance optimization.\n\nDeveloped mission-critical productivity tools serving 30,000+ banking professionals at JPMorgan Chase, including Microsoft Office integrations and content management systems. Currently driving front-end innovation at Waste Management with Adobe Experience Manager, headless CMS architectures, and DataDog monitoring.\n\nPassionate about continuous learning through a 5+ year homelab infrastructure, experimenting with containerization, automation, and AI-assisted development workflows. Advocates for mentoring teams, implementing best practices, and fostering collaborative engineering cultures.",
+    "summary": "Front-end software engineer building customer-facing applications and the tools that support them. My work spans React, Next.js, TypeScript, content platforms, and enterprise integrations at Waste Management and JPMorgan Chase.\n\nAt Waste Management, I work on wm.com using React, Next.js, Adobe Experience Manager, and Sanity. Previously, I built Microsoft Office productivity tools and content management systems for 30,000+ banking professionals at JPMorgan Chase.\n\nOutside work, I build web and mobile applications and maintain a homelab for self-hosting, automation, and hands-on learning.",
     "website": "https://camerongreens.com"
   },
   "education": {
@@ -41,12 +41,10 @@
     ]
   },
   "homelab": {
-    "hidden": "all",
-    "summary": "Maintaining a distributed home lab infrastructure for 5+ years, running containerized services and self-hosted applications across multiple devices. Focused on privacy, automation, performance optimization, and continuous learning through hands-on experimentation with emerging technologies.",
     "devices": [
       {
-        "name": "Mac Mini",
         "description": "Primary compute nodes running Docker containers in parallel for high-availability services",
+        "name": "Mac Mini",
         "services": [
           "Home Assistant",
           "Homebridge",
@@ -56,15 +54,15 @@
         ]
       },
       {
-        "name": "Raspberry Pi",
         "description": "Lightweight Docker host for network services and IoT automation",
+        "name": "Raspberry Pi",
         "services": [
           "IoT automation"
         ]
       },
       {
-        "name": "Unraid Server",
         "description": "Network-attached storage and media server with Docker support",
+        "name": "Unraid Server",
         "services": [
           "Calibre (eBook management)",
           "Nextcloud (Private cloud)",
@@ -72,10 +70,12 @@
           "Media storage and streaming"
         ]
       }
-    ]
+    ],
+    "hidden": "all",
+    "summary": "Maintaining a distributed home lab infrastructure for 5+ years, running containerized services and self-hosted applications across multiple devices. Focused on privacy, automation, performance optimization, and continuous learning through hands-on experimentation with emerging technologies."
   },
   "metadata": {
-    "description": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with proven track record at JPMorgan Chase and Waste Management.",
+    "description": "Cameron Green is a front-end software engineer working with React, Next.js, TypeScript, and Sanity at Waste Management, with previous experience at JPMorgan Chase.",
     "keywords": [
       "Cameron Green",
       "Software Engineer",
@@ -87,7 +87,8 @@
       "Web Developer",
       "Portfolio",
       "JPMorgan Chase",
-      "Waste Management"
+      "Waste Management",
+      "Sanity"
     ],
     "locale": "en_US",
     "siteName": "Cameron Green's Portfolio",
@@ -98,7 +99,7 @@
     "hidden": "resume",
     "projects": [
       {
-        "description": "Designed and maintained a distributed homelab environment for 5+ years, running containerized services across multiple devices. Self-host productivity tools, automation systems, and media services with focus on privacy, performance, and reliability. Continuously experiment with new technologies and infrastructure patterns.",
+        "description": "Maintain a distributed homelab with Docker services across macOS, Raspberry Pi, and Unraid. Self-host storage, photo and library management, home automation, and network services to explore privacy, reliability, and infrastructure design.",
         "hidden": "resume",
         "highlights": [
           "Multi-device Docker deployment (Raspberry Pi, Unraid, macOS)",
@@ -113,13 +114,13 @@
         "name": "Personal Homelab Infrastructure"
       },
       {
-        "description": "Designed and developed a cross-platform interval timer application to enhance workout productivity and time management. Successfully published across web, Android, and iOS platforms, demonstrating proficiency in multi-platform development and user experience design.",
+        "description": "Built a cross-platform interval timer for workouts and time management, published on the web, Android, and iOS.",
         "hidden": "resume",
         "highlights": [
           "Cross-platform timer application",
           "Published on web, Android, and iOS"
         ],
-        "image": "IntervalTimer.png",
+        "image": "intervalTimer.png",
         "links": {
           "android": "https://play.google.com/store/apps/details?id=com.camerongreens.timer",
           "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
@@ -131,12 +132,12 @@
         "url": "https://timer.camerongreens.com/"
       },
       {
-        "description": "Developed a custom solitaire game application using JavaScript Canvas API to explore advanced graphics programming techniques and deliver an enhanced gaming experience. Successfully launched on both Android and iOS app stores.",
+        "description": "Built a solitaire game with the JavaScript Canvas API and published it on Android and iOS.",
         "highlights": [
           "Built with JavaScript Canvas",
           "Published on Android and iOS"
         ],
-        "image": "VerticalSolitaire.png",
+        "image": "verticalSolitaire.png",
         "links": {
           "android": "https://play.google.com/store/apps/details?id=com.verticalsolitaire.verticalsolitaire",
           "ios": "https://apps.apple.com/us/app/vertical-solitaire/id1493306412"
@@ -144,7 +145,7 @@
         "name": "Vertical Solitaire"
       },
       {
-        "description": "Architected and implemented a GraphQL API service providing comprehensive data access for Overwatch game content, including heroes, maps, and game assets. Demonstrates expertise in API design, GraphQL schema development, and game data management.",
+        "description": "Built a GraphQL API for Overwatch heroes, maps, and game assets, with a focus on schema design and structured access to game data.",
         "links": {
           "github": "https://github.com/Ecleptic/overwatch_graphql_api",
           "website": "https://overwatchgraphqlapi.ecleptic.now.sh"
@@ -166,14 +167,14 @@
         "name": "Americans for Responsible Insurance"
       },
       {
-        "description": "Led JavaScript development for a collaborative real-time code execution platform as part of a 9-person academic team project. Architected WebSocket-based communication system connecting web application, chat server, and code compilation server to deliver optimal network performance and seamless user experience.",
+        "description": "Led JavaScript development on a nine-person academic team building a real-time code execution platform. Connected the web app, chat server, and compilation server through WebSockets.",
         "highlights": [
           "9-person team project",
           "Real-time code compilation and execution",
           "WebSocket-based architecture",
           "Lead JavaScript programmer"
         ],
-        "image": "CodeChat.png",
+        "image": "codeChat.png",
         "links": {
           "github": "https://github.com/NachoChef/CodeChat"
         },
@@ -239,16 +240,18 @@
           "SCSS",
           "React",
           "React Native",
-          "AngularJs",
+          "AngularJS",
           "Angular",
-          "Ionic"
+          "Ionic",
+          "TypeScript",
+          "Next.js"
         ],
         "name": "Frontend"
       },
       {
         "keywords": [
           "Node.js",
-          ".Net Core MVC",
+          ".NET Core MVC",
           "C#",
           "Python",
           "Java",
@@ -268,11 +271,14 @@
         "keywords": [
           "GraphQL",
           "Socket.io",
-          "WebPack",
+          "Webpack",
           "Babel",
           "Gatsby",
           "ESLint",
-          "Figma"
+          "Figma",
+          "Sanity",
+          "Adobe Experience Manager",
+          "Datadog"
         ],
         "name": "Tools & Frameworks"
       },
@@ -280,8 +286,7 @@
         "keywords": [
           "Android",
           "React Native",
-          "Ionic",
-          ""
+          "Ionic"
         ],
         "name": "Mobile"
       }
@@ -311,11 +316,13 @@
         "company": "Waste Management",
         "endDate": "Present",
         "highlights": [
-          "Technology Stack: React, Next.js, Adobe Experience Manager (AEM), Sanity CMS, DataDog monitoring and analytics"
+          "Led the full front-end development team for WM's chatbot service, combining team leadership with hands-on engineering.",
+          "Delivered customer self-service improvements across service management, pickup tracking, and support, helping customers navigate key tasks across successive web platforms.",
+          "Helped modernize WM's web platforms, making content easier to manage and discover while using tests and code reviews to protect existing customer journeys."
         ],
         "position": "Front End Software Engineer",
         "startDate": "2021-08",
-        "summary": "Spearhead front-end development initiatives for enterprise-scale web applications at wm.com, architecting modern, scalable solutions that enhance user experience and drive business objectives.",
+        "summary": "Build customer-facing web experiences for wm.com, with a growing scope from hands-on delivery to team leadership and technical ownership.",
         "website": "https://wm.com"
       },
       {
