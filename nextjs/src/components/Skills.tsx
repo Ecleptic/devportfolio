@@ -9,7 +9,7 @@ export default function Skills({ skills }: SkillsProps) {
   const allSkills = skills.skills.flatMap((skillCategory) => skillCategory.keywords);
 
   // Remove duplicates (in case a skill appears in multiple categories)
-  const uniqueSkills = Array.from(new Set(allSkills));
+  const uniqueSkills = Array.from(new Set(allSkills.map((skill) => skill.trim()).filter(Boolean)));
 
   return (
     <div id="skills" className="background-alt">

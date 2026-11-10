@@ -40,6 +40,8 @@ npm run dev                    # http://localhost:3333
 1. Edit `resume.json` directly
 2. Optionally sync to Sanity: `cd scripts && npm run sync-to-sanity`
 
+**Keep CMS content in sync:** A later Sanity export replaces `resume.json`. After reviewing and approving direct JSON changes, sync that content back to Sanity before the next CMS publish. Do not run either sync against unreviewed changes.
+
 ## 📂 Project Structure
 
 ```

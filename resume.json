@@ -15,7 +15,7 @@
         "username": "cameron-k-green"
       }
     ],
-    "summary": "Senior Front End Software Engineer with 10+ years of experience building enterprise-scale applications for Fortune 500 companies including JPMorgan Chase and Waste Management. Specialized in React ecosystems with expertise in Next.js, TypeScript, and performance optimization.\n\nDeveloped mission-critical productivity tools serving 30,000+ banking professionals at JPMorgan Chase, including Microsoft Office integrations and content management systems. Currently driving front-end innovation at Waste Management with Adobe Experience Manager, headless CMS architectures, and DataDog monitoring.\n\nPassionate about continuous learning through a 5+ year homelab infrastructure, experimenting with containerization, automation, and AI-assisted development workflows. Advocates for mentoring teams, implementing best practices, and fostering collaborative engineering cultures.",
+    "summary": "Front-end software engineer building customer-facing applications and the tools that support them. My work spans React, Next.js, TypeScript, content platforms, and enterprise integrations at Waste Management and JPMorgan Chase.\n\nAt Waste Management, my 2026 work centers on the new wm.com platform: Sanity authoring, Algolia content synchronization, chatbot integration, and customer self-service journeys. Previously, I built Microsoft Office productivity tools and content management systems for 30,000+ banking professionals at JPMorgan Chase.\n\nOutside work, I build web and mobile applications and maintain a homelab for self-hosting, automation, and hands-on learning.",
     "website": "https://camerongreens.com"
   },
   "education": {
@@ -75,7 +75,7 @@
     ]
   },
   "metadata": {
-    "description": "Front-End Software Engineer with over 10 years of experience building scalable web applications and productivity tools for Fortune 500 companies. Specialized in React with proven track record at JPMorgan Chase and Waste Management.",
+    "description": "Cameron Green is a front-end software engineer working with React, Next.js, TypeScript, Sanity, and Algolia at Waste Management, with previous experience at JPMorgan Chase.",
     "keywords": [
       "Cameron Green",
       "Software Engineer",
@@ -87,7 +87,9 @@
       "Web Developer",
       "Portfolio",
       "JPMorgan Chase",
-      "Waste Management"
+      "Waste Management",
+      "Sanity",
+      "Algolia"
     ],
     "locale": "en_US",
     "siteName": "Cameron Green's Portfolio",
@@ -98,7 +100,7 @@
     "hidden": "resume",
     "projects": [
       {
-        "description": "Designed and maintained a distributed homelab environment for 5+ years, running containerized services across multiple devices. Self-host productivity tools, automation systems, and media services with focus on privacy, performance, and reliability. Continuously experiment with new technologies and infrastructure patterns.",
+        "description": "Maintain a distributed homelab with Docker services across macOS, Raspberry Pi, and Unraid. Self-host storage, photo and library management, home automation, and network services to explore privacy, reliability, and infrastructure design.",
         "hidden": "resume",
         "highlights": [
           "Multi-device Docker deployment (Raspberry Pi, Unraid, macOS)",
@@ -113,13 +115,13 @@
         "name": "Personal Homelab Infrastructure"
       },
       {
-        "description": "Designed and developed a cross-platform interval timer application to enhance workout productivity and time management. Successfully published across web, Android, and iOS platforms, demonstrating proficiency in multi-platform development and user experience design.",
+        "description": "Built a cross-platform interval timer for workouts and time management, published on the web, Android, and iOS.",
         "hidden": "resume",
         "highlights": [
           "Cross-platform timer application",
           "Published on web, Android, and iOS"
         ],
-        "image": "IntervalTimer.png",
+        "image": "intervalTimer.png",
         "links": {
           "android": "https://play.google.com/store/apps/details?id=com.camerongreens.timer",
           "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
@@ -131,12 +133,12 @@
         "url": "https://timer.camerongreens.com/"
       },
       {
-        "description": "Developed a custom solitaire game application using JavaScript Canvas API to explore advanced graphics programming techniques and deliver an enhanced gaming experience. Successfully launched on both Android and iOS app stores.",
+        "description": "Built a solitaire game with the JavaScript Canvas API and published it on Android and iOS.",
         "highlights": [
           "Built with JavaScript Canvas",
           "Published on Android and iOS"
         ],
-        "image": "VerticalSolitaire.png",
+        "image": "verticalSolitaire.png",
         "links": {
           "android": "https://play.google.com/store/apps/details?id=com.verticalsolitaire.verticalsolitaire",
           "ios": "https://apps.apple.com/us/app/vertical-solitaire/id1493306412"
@@ -144,7 +146,7 @@
         "name": "Vertical Solitaire"
       },
       {
-        "description": "Architected and implemented a GraphQL API service providing comprehensive data access for Overwatch game content, including heroes, maps, and game assets. Demonstrates expertise in API design, GraphQL schema development, and game data management.",
+        "description": "Built a GraphQL API for Overwatch heroes, maps, and game assets, with a focus on schema design and structured access to game data.",
         "links": {
           "github": "https://github.com/Ecleptic/overwatch_graphql_api",
           "website": "https://overwatchgraphqlapi.ecleptic.now.sh"
@@ -166,14 +168,14 @@
         "name": "Americans for Responsible Insurance"
       },
       {
-        "description": "Led JavaScript development for a collaborative real-time code execution platform as part of a 9-person academic team project. Architected WebSocket-based communication system connecting web application, chat server, and code compilation server to deliver optimal network performance and seamless user experience.",
+        "description": "Led JavaScript development on a nine-person academic team building a real-time code execution platform. Connected the web app, chat server, and compilation server through WebSockets.",
         "highlights": [
           "9-person team project",
           "Real-time code compilation and execution",
           "WebSocket-based architecture",
           "Lead JavaScript programmer"
         ],
-        "image": "CodeChat.png",
+        "image": "codeChat.png",
         "links": {
           "github": "https://github.com/NachoChef/CodeChat"
         },
@@ -232,58 +234,62 @@
   "skills": {
     "skills": [
       {
+        "name": "Frontend",
         "keywords": [
           "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
           "HTML5",
           "CSS3",
           "SCSS",
-          "React",
-          "React Native",
-          "AngularJs",
           "Angular",
-          "Ionic"
-        ],
-        "name": "Frontend"
+          "AngularJS"
+        ]
       },
       {
+        "name": "Content & Search",
+        "keywords": [
+          "Sanity",
+          "Adobe Experience Manager",
+          "Algolia"
+        ]
+      },
+      {
+        "name": "Backend & Data",
         "keywords": [
           "Node.js",
-          ".Net Core MVC",
+          ".NET Core MVC",
           "C#",
           "Python",
           "Java",
-          "C++"
-        ],
-        "name": "Backend"
-      },
-      {
-        "keywords": [
+          "C++",
           "MongoDB",
           "PostgreSQL",
-          "Redis"
-        ],
-        "name": "Database"
+          "Redis",
+          "GraphQL"
+        ]
       },
       {
+        "name": "Quality & Delivery",
         "keywords": [
-          "GraphQL",
-          "Socket.io",
-          "WebPack",
-          "Babel",
-          "Gatsby",
+          "React Testing Library",
           "ESLint",
+          "Datadog",
+          "LaunchDarkly",
+          "CI/CD",
+          "Webpack",
+          "Babel",
           "Figma"
-        ],
-        "name": "Tools & Frameworks"
+        ]
       },
       {
+        "name": "Mobile",
         "keywords": [
-          "Android",
           "React Native",
           "Ionic",
-          ""
-        ],
-        "name": "Mobile"
+          "Android"
+        ]
       }
     ]
   },
@@ -311,11 +317,16 @@
         "company": "Waste Management",
         "endDate": "Present",
         "highlights": [
-          "Technology Stack: React, Next.js, Adobe Experience Manager (AEM), Sanity CMS, DataDog monitoring and analytics"
+          "Built Sanity content schemas, reusable page components, authoring tools, and migration workflows for the new wm.com platform.",
+          "Integrated Sanity content with Algolia search, including synchronization, indexing rules, environment configuration, and CI/CD workflows.",
+          "Implemented chatbot integration across applications, with page-level controls and fixes for session continuity and authentication handoff.",
+          "Improved Service Hub pickup schedules and ETA journeys, including service classification, saved-address loading, and MyWM navigation.",
+          "Delivered customer-support integrations and UI fixes across live chat, login, localized content, accessibility, and responsive layouts.",
+          "Contributed to React 19 migration, automated tests, and peer reviews across WM's front-end applications."
         ],
         "position": "Front End Software Engineer",
         "startDate": "2021-08",
-        "summary": "Spearhead front-end development initiatives for enterprise-scale web applications at wm.com, architecting modern, scalable solutions that enhance user experience and drive business objectives.",
+        "summary": "Build customer-facing features and content tools for wm.com, with a 2026 focus on its Next.js and Sanity platform.",
         "website": "https://wm.com"
       },
       {
