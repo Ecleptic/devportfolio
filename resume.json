@@ -108,8 +108,8 @@
           "Offline downloads and reading progress"
         ],
         "icon": "https://cdn.sanity.io/images/qet8gm0s/production/6f62dafb2e184935cafd880666e8cd6bef8390fb-512x512.png",
-        "image": "https://cdn.sanity.io/images/qet8gm0s/production/25dc8293a9c199bf3c99695aba69f06fb5bc661d-1254x1254.png",
-        "imageAlt": "Illustration of an open book with lavender audio waves",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/a75dbd181d10f4169b86e822ea9d2a84660e43c3-800x800.png",
+        "imageAlt": "Codex Reader Home screen showing the Currently Reading shelf",
         "links": {
           "ios": "https://apps.apple.com/us/app/codex-reader-early-access/id6762022936",
           "website": "https://codexreader.app/"
@@ -124,8 +124,8 @@
           "Playable on the web and available on iOS"
         ],
         "icon": "https://cdn.sanity.io/images/qet8gm0s/production/20d27fd3496aa395797aa149ce68456da89aa86e-512x512.jpg",
-        "image": "https://cdn.sanity.io/images/qet8gm0s/production/e5b7664d48eb6140bee4dc4387b54f8dcec9327a-1254x1254.png",
-        "imageAlt": "Illustration of ivory playing cards and a purple card back",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/c89de0834548264cf4b1cbe531788bc094079e9f-800x800.png",
+        "imageAlt": "Vertical Solitaire card-stack mark with a spade",
         "links": {
           "ios": "https://apps.apple.com/us/app/vertical-solitaire/id1493306412",
           "website": "https://verticalsolitaire.com/"
@@ -142,8 +142,8 @@
           "Cross-platform delivery with Apache Cordova"
         ],
         "icon": "https://cdn.sanity.io/images/qet8gm0s/production/592526655d8a171edb34a0dbb9d9eb19bbcbff0e-180x180.png",
-        "image": "https://cdn.sanity.io/images/qet8gm0s/production/4e0fffa7591a9143090010437b8e3804e966c761-1254x1254.png",
-        "imageAlt": "Illustration of a purple circular timer with a play symbol",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/014ca0c3c6b58d67ed373067cc2e63aae816b4b5-800x800.png",
+        "imageAlt": "Interval Timer displaying 01:10 with a purple timer ring",
         "links": {
           "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
           "github": "https://github.com/Ecleptic/Interval-Timer",
@@ -165,9 +165,9 @@
           "Digital library management with Calibre and Storyteller (EPUB3)",
           "Container orchestration and monitoring with Portainer"
         ],
-        "icon": "https://cdn.sanity.io/images/qet8gm0s/production/785440221ae63974af3653e03bc73de0d3d839e4-1254x1254.png",
-        "image": "https://cdn.sanity.io/images/qet8gm0s/production/ee509da9ad08b1fbbd4a0c6f32f7b205c72d1396-1254x1254.png",
-        "imageAlt": "Illustration of a server, mini computer, and circuit board connected by purple cables",
+        "icon": "https://cdn.sanity.io/images/qet8gm0s/production/7fd8de1341ce11bb3339c149479ce39dbc4ab8ce-800x800.png",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/6191afa0616bc1f8406665d7e0ae2a01855164d9-800x800.png",
+        "imageAlt": "Line diagram of a homelab server connected to a mini computer and circuit board",
         "name": "Homelab"
       },
       {
