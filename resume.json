@@ -108,8 +108,8 @@
           "Offline downloads and reading progress"
         ],
         "icon": "https://cdn.sanity.io/images/qet8gm0s/production/6f62dafb2e184935cafd880666e8cd6bef8390fb-512x512.png",
-        "image": "https://cdn.sanity.io/images/qet8gm0s/production/a75dbd181d10f4169b86e822ea9d2a84660e43c3-800x800.png",
-        "imageAlt": "Codex Reader Home screen showing the Currently Reading shelf",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/6f62dafb2e184935cafd880666e8cd6bef8390fb-512x512.png",
+        "imageAlt": "Codex Reader app icon with an open book and purple audio waves",
         "links": {
           "ios": "https://apps.apple.com/us/app/codex-reader-early-access/id6762022936",
           "website": "https://codexreader.app/"
