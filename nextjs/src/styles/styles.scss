@@ -637,6 +637,9 @@ footer {
 }
 
 .project {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  align-items: center;
   position: relative;
   max-width: 900px;
   margin: 0 auto 30px auto;
@@ -646,16 +649,23 @@ footer {
 }
 
 .project-image {
-  float: left;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
 }
 
 .project-info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 300px;
-  padding: 15px;
+  min-width: 0;
+  padding: 24px;
   h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     font-size: 1.5em;
     font-weight: 300;
     color: $heading;
@@ -668,6 +678,14 @@ footer {
   }
 }
 
+.project-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
@@ -676,11 +694,10 @@ footer {
 }
 
 .no-image {
+  grid-template-columns: minmax(0, 1fr);
+
   .project-info {
-    position: relative;
-    margin: 0;
     padding: 30px 15px;
-    transform: none;
   }
 }
 
@@ -945,15 +962,15 @@ footer {
       float: none;
     }
   }
+  .project {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .project-image {
-    display: none;
+    width: min(100%, 300px);
+    margin: 0 auto;
   }
   .project-info {
-    position: relative;
-    margin: 0;
     padding: 30px 15px;
-    top: auto;
-    transform: none;
   }
   footer {
     text-align: center;

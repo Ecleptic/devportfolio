@@ -1,5 +1,6 @@
 import type { ResumeData } from '../types/resume';
 import { shouldShowItem } from '../types/resume';
+import { resolveProjectImage } from '../lib/project-images';
 
 interface ProjectsProps {
   projects: ResumeData['projects'];
@@ -23,10 +24,9 @@ export default function Projects({ projects, imageFilenames }: ProjectsProps) {
       <div className="container">
         <div className="row">
           {visibleProjects.map((project) => {
-            const imageFilename = project.image
-              ? imagesByName.get(project.image.toLowerCase())
-              : undefined;
-            const hasImage = !!imageFilename;
+            const imageSrc = resolveProjectImage(project.image, imagesByName, 600);
+            const iconSrc = resolveProjectImage(project.icon, imagesByName, 96);
+            const hasImage = !!imageSrc;
             const projectLinks = [
               {
                 label: 'View Project',
@@ -49,11 +49,33 @@ export default function Projects({ projects, imageFilenames }: ProjectsProps) {
                 key={projectKey}
                 className={`project shadow-large ${!hasImage ? 'no-image' : ''}`}
               >
-                <div className="project-image">
-                  {hasImage && <img src={`/images/${imageFilename}`} alt={project.name} />}
-                </div>
+                {imageSrc && (
+                  <div className="project-image">
+                    <img
+                      src={imageSrc}
+                      alt={project.imageAlt?.trim() || `${project.name} project preview`}
+                      width={300}
+                      height={300}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                )}
                 <div className="project-info">
-                  <h3>{project.name}</h3>
+                  <h3>
+                    {iconSrc && (
+                      <img
+                        className="project-icon"
+                        src={iconSrc}
+                        alt=""
+                        width={36}
+                        height={36}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    )}
+                    <span>{project.name}</span>
+                  </h3>
                   <p>{project.description}</p>
                   {projectLinks.length > 0 && (
                     <div className="project-links">
