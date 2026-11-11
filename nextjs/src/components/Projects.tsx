@@ -25,7 +25,7 @@ export default function Projects({ projects, imageFilenames }: ProjectsProps) {
         <div className="row">
           {visibleProjects.map((project) => {
             const imageSrc = resolveProjectImage(project.image, imagesByName, 360);
-            const iconSrc = resolveProjectImage(project.icon, imagesByName, 96);
+            const iconSrc = resolveProjectImage(project.icon, imagesByName, 112);
             const hasImage = !!imageSrc;
             const projectLinks = [
               {
