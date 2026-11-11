@@ -67,7 +67,9 @@ export interface ResumeData {
       description: string;
       highlights?: string[];
       url?: string;
-      image?: string; // Optional image filename
+      image?: string; // Local filename or HTTPS Sanity CDN image URL
+      imageAlt?: string;
+      icon?: string; // Local filename or HTTPS Sanity CDN image URL
       links?: {
         website?: string;
         github?: string;

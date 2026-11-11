@@ -42,6 +42,8 @@ npm run dev                    # http://localhost:3333
 
 **Content ownership:** Sanity owns resume text, experience, projects, and skills. The site and PDF read the exported `resume.json` at build time. Keep content changes in Sanity and code changes in Git.
 
+**Project images:** In Sanity, `image` and optional `icon` accept either a filename in `nextjs/public/images` or an HTTPS `cdn.sanity.io/images/` URL. Keep these fields as strings so the JSON export preserves them. Add `imageAlt` to describe each cover; icons next to project names are decorative. The site requests smaller CDN variants, while the original asset URL stays in Sanity. Unknown local files or unsupported URLs fall back to a text-only card.
+
 **Keep CMS content in sync:** A later Sanity export replaces `resume.json`. After reviewing and approving direct JSON changes, sync that content back to Sanity before the next CMS publish. Do not run either sync against unreviewed changes.
 
 ## 📂 Project Structure

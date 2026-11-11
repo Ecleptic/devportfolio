@@ -369,7 +369,24 @@ export const resume = defineType({
               fields: [
                 { name: 'name', type: 'string', title: 'Project Name' },
                 { name: 'description', type: 'text', title: 'Description', rows: 3 },
-                { name: 'image', type: 'string', title: 'Image Filename' },
+                {
+                  name: 'image',
+                  type: 'string',
+                  title: 'Project Image',
+                  description: 'Filename in nextjs/public/images or an HTTPS image URL from cdn.sanity.io. Use a square cover image.',
+                },
+                {
+                  name: 'imageAlt',
+                  type: 'string',
+                  title: 'Image Description',
+                  description: 'Describe the project cover for people using screen readers.',
+                },
+                {
+                  name: 'icon',
+                  type: 'string',
+                  title: 'Project Icon',
+                  description: 'Optional square app icon: filename in nextjs/public/images or an HTTPS image URL from cdn.sanity.io.',
+                },
                 {
                   name: 'highlights',
                   type: 'array',

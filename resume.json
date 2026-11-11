@@ -99,6 +99,60 @@
     "hidden": "resume",
     "projects": [
       {
+        "description": "Developed an iOS ebook and audiobook app built on Storyteller. Connects self-hosted libraries, synchronizes text with narration, and supports offline reading and listening.",
+        "hidden": "resume",
+        "highlights": [
+          "Expo and React Native with a native Readium module",
+          "Synchronized narration with EPUB 3 Media Overlays",
+          "Unified libraries from Plex, Audiobookshelf, Storyteller, and OPDS",
+          "Offline downloads and reading progress"
+        ],
+        "icon": "https://cdn.sanity.io/images/qet8gm0s/production/6f62dafb2e184935cafd880666e8cd6bef8390fb-512x512.png",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/6f62dafb2e184935cafd880666e8cd6bef8390fb-512x512.png",
+        "imageAlt": "Codex Reader app icon with an open book and purple audio waves",
+        "links": {
+          "ios": "https://apps.apple.com/us/app/codex-reader-early-access/id6762022936",
+          "website": "https://codexreader.app/"
+        },
+        "name": "Codex Reader",
+        "url": "https://codexreader.app/"
+      },
+      {
+        "description": "Built a vertical-layout solitaire game with the JavaScript Canvas API, available to play on the web and on iOS.",
+        "highlights": [
+          "JavaScript Canvas game rendering",
+          "Playable on the web and available on iOS"
+        ],
+        "icon": "https://cdn.sanity.io/images/qet8gm0s/production/20d27fd3496aa395797aa149ce68456da89aa86e-512x512.jpg",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/c89de0834548264cf4b1cbe531788bc094079e9f-800x800.png",
+        "imageAlt": "Vertical Solitaire card-stack mark with a spade",
+        "links": {
+          "ios": "https://apps.apple.com/us/app/vertical-solitaire/id1493306412",
+          "website": "https://verticalsolitaire.com/"
+        },
+        "name": "Vertical Solitaire",
+        "url": "https://verticalsolitaire.com/"
+      },
+      {
+        "description": "Built a cross-platform interval timer for workouts and time management, with a browser app and open-source code.",
+        "hidden": "resume",
+        "highlights": [
+          "Configurable workout and rest intervals",
+          "Browser app with open-source code",
+          "Cross-platform delivery with Apache Cordova"
+        ],
+        "icon": "https://cdn.sanity.io/images/qet8gm0s/production/592526655d8a171edb34a0dbb9d9eb19bbcbff0e-180x180.png",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/014ca0c3c6b58d67ed373067cc2e63aae816b4b5-800x800.png",
+        "imageAlt": "Interval Timer displaying 01:10 with a purple timer ring",
+        "links": {
+          "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
+          "github": "https://github.com/Ecleptic/Interval-Timer",
+          "website": "https://timer.camerongreens.com/"
+        },
+        "name": "Interval Timer",
+        "url": "https://timer.camerongreens.com/"
+      },
+      {
         "description": "Maintain a distributed homelab with Docker services across macOS, Raspberry Pi, and Unraid. Self-host storage, photo and library management, home automation, and network services to explore privacy, reliability, and infrastructure design.",
         "hidden": "resume",
         "highlights": [
@@ -111,41 +165,14 @@
           "Digital library management with Calibre and Storyteller (EPUB3)",
           "Container orchestration and monitoring with Portainer"
         ],
-        "name": "Personal Homelab Infrastructure"
-      },
-      {
-        "description": "Built a cross-platform interval timer for workouts and time management, published on the web, Android, and iOS.",
-        "hidden": "resume",
-        "highlights": [
-          "Cross-platform timer application",
-          "Published on web, Android, and iOS"
-        ],
-        "image": "intervalTimer.png",
-        "links": {
-          "android": "https://play.google.com/store/apps/details?id=com.camerongreens.timer",
-          "codepen": "https://codepen.io/Ecleptic/pen/MQJeRK",
-          "github": "https://github.com/Ecleptic/Interval-Timer",
-          "ios": "https://apps.apple.com/us/app/ecleptics-interval-timer/id1494352474",
-          "website": "https://timer.camerongreens.com/"
-        },
-        "name": "Interval Timer",
-        "url": "https://timer.camerongreens.com/"
-      },
-      {
-        "description": "Built a solitaire game with the JavaScript Canvas API and published it on Android and iOS.",
-        "highlights": [
-          "Built with JavaScript Canvas",
-          "Published on Android and iOS"
-        ],
-        "image": "verticalSolitaire.png",
-        "links": {
-          "android": "https://play.google.com/store/apps/details?id=com.verticalsolitaire.verticalsolitaire",
-          "ios": "https://apps.apple.com/us/app/vertical-solitaire/id1493306412"
-        },
-        "name": "Vertical Solitaire"
+        "icon": "https://cdn.sanity.io/images/qet8gm0s/production/7fd8de1341ce11bb3339c149479ce39dbc4ab8ce-800x800.png",
+        "image": "https://cdn.sanity.io/images/qet8gm0s/production/6191afa0616bc1f8406665d7e0ae2a01855164d9-800x800.png",
+        "imageAlt": "Line diagram of a homelab server connected to a mini computer and circuit board",
+        "name": "Homelab"
       },
       {
         "description": "Built a GraphQL API for Overwatch heroes, maps, and game assets, with a focus on schema design and structured access to game data.",
+        "hidden": "all",
         "links": {
           "github": "https://github.com/Ecleptic/overwatch_graphql_api",
           "website": "https://overwatchgraphqlapi.ecleptic.now.sh"
@@ -168,6 +195,7 @@
       },
       {
         "description": "Led JavaScript development on a nine-person academic team building a real-time code execution platform. Connected the web app, chat server, and compilation server through WebSockets.",
+        "hidden": "all",
         "highlights": [
           "9-person team project",
           "Real-time code compilation and execution",
@@ -244,7 +272,11 @@
           "Angular",
           "Ionic",
           "TypeScript",
-          "Next.js"
+          "Next.js",
+          "Redux Toolkit",
+          "Canvas API",
+          "Web Accessibility",
+          "Localization"
         ],
         "name": "Frontend"
       },
@@ -255,7 +287,8 @@
           "C#",
           "Python",
           "Java",
-          "C++"
+          "C++",
+          "REST API Integration"
         ],
         "name": "Backend"
       },
@@ -263,7 +296,8 @@
         "keywords": [
           "MongoDB",
           "PostgreSQL",
-          "Redis"
+          "Redis",
+          "SQLite"
         ],
         "name": "Database"
       },
@@ -278,7 +312,13 @@
           "Figma",
           "Sanity",
           "Adobe Experience Manager",
-          "Datadog"
+          "Datadog",
+          "GROQ",
+          "Algolia",
+          "Storybook",
+          "LaunchDarkly",
+          "Adobe Analytics",
+          "Sentry"
         ],
         "name": "Tools & Frameworks"
       },
@@ -286,9 +326,38 @@
         "keywords": [
           "Android",
           "React Native",
-          "Ionic"
+          "Ionic",
+          "iOS",
+          "Expo",
+          "Apache Cordova",
+          "Readium",
+          "EPUB 3 Media Overlays"
         ],
         "name": "Mobile"
+      },
+      {
+        "keywords": [
+          "Jest",
+          "React Testing Library",
+          "Git",
+          "GitHub Actions",
+          "CI/CD",
+          "Code Review"
+        ],
+        "name": "Testing & Delivery"
+      },
+      {
+        "keywords": [
+          "Docker",
+          "Unraid",
+          "Raspberry Pi",
+          "Portainer",
+          "Tailscale",
+          "Home Assistant",
+          "Homebridge",
+          "Pi-hole"
+        ],
+        "name": "Infrastructure & Automation"
       }
     ]
   },
@@ -298,11 +367,11 @@
       {
         "hidden": "resume",
         "organization": "Boy Scouts of America - Troop 51",
-        "position": "Eagle Scout",
-        "summary": "For my Eagle Project I coordinated over 1600 service hours."
+        "position": "Eagle Scout & Order of the Arrow Member",
+        "summary": "Coordinated more than 1,600 service hours for my Eagle Scout project. Member of the Order of the Arrow, Scouting's national honor society."
       },
       {
-        "hidden": "resume",
+        "hidden": "all",
         "organization": "Boy Scouts of America",
         "position": "Order of the Arrow Member",
         "summary": "Scouting's National Honor Society"

@@ -637,25 +637,38 @@ footer {
 }
 
 .project {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  align-items: center;
   position: relative;
   max-width: 900px;
   margin: 0 auto 30px auto;
   overflow: hidden;
   background: #fff;
+  border: 1px solid $border;
   border-radius: 4px;
 }
 
 .project-image {
-  float: left;
+  padding: 15px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
 }
 
 .project-info {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 300px;
+  min-width: 0;
   padding: 15px;
   h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     font-size: 1.5em;
     font-weight: 300;
     color: $heading;
@@ -668,6 +681,14 @@ footer {
   }
 }
 
+.project-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
@@ -676,11 +697,10 @@ footer {
 }
 
 .no-image {
+  grid-template-columns: minmax(0, 1fr);
+
   .project-info {
-    position: relative;
-    margin: 0;
     padding: 30px 15px;
-    transform: none;
   }
 }
 
@@ -945,15 +965,19 @@ footer {
       float: none;
     }
   }
+  .project {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  // Preserve the original compact mobile cards; the title icon identifies each project.
   .project-image {
     display: none;
   }
   .project-info {
-    position: relative;
-    margin: 0;
-    padding: 30px 15px;
-    top: auto;
-    transform: none;
+    padding: 15px;
+  }
+  .project-icon {
+    width: 56px;
+    height: 56px;
   }
   footer {
     text-align: center;

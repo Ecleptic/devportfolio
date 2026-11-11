@@ -15,7 +15,8 @@
     "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "type-check": "tsc --noEmit",
     "security:audit": "npm audit --audit-level=moderate",
-    "ci:check": "npm run lint && npm run format:check && npm run type-check && npm run security:audit && npm run build"
+    "ci:check": "npm test && npm run lint && npm run format:check && npm run type-check && npm run security:audit && npm run build",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "next": "15.5.29",
