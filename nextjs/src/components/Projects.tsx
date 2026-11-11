@@ -24,7 +24,7 @@ export default function Projects({ projects, imageFilenames }: ProjectsProps) {
       <div className="container">
         <div className="row">
           {visibleProjects.map((project) => {
-            const imageSrc = resolveProjectImage(project.image, imagesByName, 600);
+            const imageSrc = resolveProjectImage(project.image, imagesByName, 360);
             const iconSrc = resolveProjectImage(project.icon, imagesByName, 96);
             const hasImage = !!imageSrc;
             const projectLinks = [
@@ -54,8 +54,8 @@ export default function Projects({ projects, imageFilenames }: ProjectsProps) {
                     <img
                       src={imageSrc}
                       alt={project.imageAlt?.trim() || `${project.name} project preview`}
-                      width={300}
-                      height={300}
+                      width={180}
+                      height={180}
                       loading="lazy"
                       decoding="async"
                     />
@@ -68,8 +68,8 @@ export default function Projects({ projects, imageFilenames }: ProjectsProps) {
                         className="project-icon"
                         src={iconSrc}
                         alt=""
-                        width={36}
-                        height={36}
+                        width={32}
+                        height={32}
                         loading="lazy"
                         decoding="async"
                       />

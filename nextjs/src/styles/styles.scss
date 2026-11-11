@@ -638,17 +638,20 @@ footer {
 
 .project {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-columns: 210px minmax(0, 1fr);
   align-items: center;
   position: relative;
   max-width: 900px;
   margin: 0 auto 30px auto;
   overflow: hidden;
   background: #fff;
+  border: 1px solid $border;
   border-radius: 4px;
 }
 
 .project-image {
+  padding: 15px;
+
   img {
     display: block;
     width: 100%;
@@ -660,7 +663,7 @@ footer {
 
 .project-info {
   min-width: 0;
-  padding: 24px;
+  padding: 15px;
   h3 {
     display: flex;
     align-items: center;
@@ -680,10 +683,10 @@ footer {
 
 .project-icon {
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .project-links {
@@ -965,12 +968,12 @@ footer {
   .project {
     grid-template-columns: minmax(0, 1fr);
   }
+  // Preserve the original compact mobile cards; the title icon identifies each project.
   .project-image {
-    width: min(100%, 300px);
-    margin: 0 auto;
+    display: none;
   }
   .project-info {
-    padding: 30px 15px;
+    padding: 15px;
   }
   footer {
     text-align: center;
