@@ -1,5 +1,12 @@
 [build]
   command = "cd ../pdf && npm install && cd ../nextjs && npm run build"
+  # Build only when the site can have changed. This runs from nextjs/ (the
+  # base directory), so ".." paths reach the rest of the repo. Exit 0 cancels
+  # the build before dependencies install, so it uses no build minutes.
+  # resume.json is in the list, so a Sanity publish still deploys.
+  # Production only (CG 2026-11-16): deploy previews and branch deploys
+  # never build.
+  ignore = '[ "$CONTEXT" != "production" ] || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ../pdf ../resume.json ../netlify'
 
 [context.production]
   command = "cd ../pdf && npm install && cd ../nextjs && npm run build"
